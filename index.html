@@ -1,625 +1,1267 @@
-```metadata
-title: Fort Maximillien
-description: 'A stealth prison-break module for a wounded 5th-level party in occupied Waterdeep.'
-tags: [waterdeep, stealth, prison-break, politics, purple-dragons]
-systems: [dnd5e]
-renderer: V3
-theme: 5ePHB
-
-```
-
-```css
-/* Match the look/feel of the provided template */
-.page {
-  padding-bottom: 1.1cm;
-}
-.page .small {
-  font-size: 0.92em;
-  line-height: 1.25em;
-}
-.page .quiet {
-  opacity: 0.85;
-}
-.page hr {
-  border: none;
-  border-top: 1px solid #00000025;
-  margin: 0.35cm 0;
-}
-.page blockquote {
-  border-left: 4px solid #00000022;
-  padding-left: 0.35cm;
-  margin-left: 0;
-}
-.page .twoCol {
-  column-count: 2;
-  column-gap: 0.65cm;
-}
-.page .threeCol {
-  column-count: 3;
-  column-gap: 0.5cm;
-}
-.page table th, .page table td {
-  vertical-align: top;
-}
-```
-
-# Fort Maximillien
-## A Stealth Prison-Break in Occupied Waterdeep
-
-{{quote
-"Peace is maintained, not requested."  
-{{attribution Colonel Angus, Urban Detachment of the Purple Dragons}}
-}}
-
-### Adventure Summary
-**Fort Maximillien** is a fortified garrison and guard post in Waterdeep, held by a **Cormyrean Purple Dragon urban detachment**. Your party is battered at the end of an adventuring day, with two allies captured inside.
-
-**Tonight’s objective (this session):**
-- **Extract Lenore** from the locked Infirmary (14) and secure a safe **Long Rest Chamber**.
-- **Extract BattleBeast** from the Pens (5).
-- Escape alive.
-
-**Next session hooks (do not fully resolve tonight):**
-- **Maverick** is held upstairs for interrogation by **General Varkus**.
-- **Shadowhigh** is in the dungeon below, scheduled for hanging at dawn unless events change.
-
----
-
-# Background & Political Fault Lines
-Waterdeep is not a frontier town, and it hates being treated like one.
-
-### The Factions
-**General Varkus (Imperial Governor).** Wants a strong, multinational empire with a hard military core—an echo of **Zanzibar** (this world’s Caesar). Varkus is courting Waterdeep’s old-money elite and ancient trades—**a new development**.
-
-**The Unmasked Lord ap Dyksterhaus.** Openly flaunts imperial customs, rails against overtaxation, and champions merchant interests. His base is the merchant class (and those who profit from them).
-
-**The Old Houses.** Ancient wealth and older magic. They despise the merchant class but love imperial peace, trade routes, and access. Varkus courting them is a tectonic shift.
-
-**The Farmlands.** Revolts flare beyond the city over imperial seizure of grain and cattle.
-
-### Recent Incidents (Tonight)
-- A **foiled heist at Tiffany House**, where Varkus was raising funds and making friends among the elite.
-- A violent incident at **Ard Farkle’s**: a convict later held in the fort fired into bystanders; **carts burned and horses died**.
-- The vernal equinox approaches. The parties are thinner. The city’s smiles feel rented.
-
----
-
-# Running the Fort
-This module is built to avoid “one bad roll = TPK.” It’s a pressure system.
-
-## Zone Alerts (Localized)
-Track alert separately for each zone:
-- **Zone A:** Exterior/Gate (1–2)
-- **Zone B:** Courtyard & Arcade (6–9)
-- **Zone C:** Service & Command (10–13)
-- **Zone D:** Lower Halls (14–22)
-
-Each zone has **Alert 0–3**:
-- **0 Normal:** routine patrols.
-- **1 Suspicious:** doubled checks, a runner dispatched.
-- **2 Active Search:** doors watched, patrols tighten.
-- **3 Lockdown:** doors barred, reinforcements stage.
-
-**Fort-wide Lockdown** only happens if the **Dispatch Horn** in (11) is sounded.
-
-## Keys (Two Rings)
-**Ring A (on wall pegboard in 11):** Infirmary (14), Back Hall (16), Dungeon stairs (20).  
-**Ring B (on Colonel Angus):** Stairs Up (12), Alarm Cabinet, upstairs protocols.
-
-**Key Visibility:** the pegboard is visible from the doorway of (11). Ring B is clipped to Angus’ sword belt.
-
-## Stairs Up Are Inaccessible Tonight
-The **stairs up (12)** are:
-- Locked (Ring B)
-- Under **Arcane Lock** from above (War Wizard protocol)
-- **Barred from the top** (physical bar)
-
-Even with Ring B, opening (12) requires upstairs access. This keeps tonight focused.
-
----
-
-# Rumors & Overheard Talk (Use as Breadcrumbs)
-Roll or pick when PCs pause to listen.
-
-{{twoCol
-| d8 | Rumor |
-|---:|---|
-| 1 | “Dyksterhaus says the Emperor bleeds merchants dry while nobles dine.” |
-| 2 | “Varkus wants Zanzibar’s kind of unity—steel first, then peace.” |
-| 3 | “The old houses like imperial peace. They don’t like merchants.” |
-| 4 | “Farmland levies doubled. They’re burning tallies outside the walls.” |
-| 5 | “Tiffany House welcomed Varkus. That’s new. That’s dangerous.” |
-| 6 | “At Ard Farkle’s, someone fired into the street. Horses burned in trace.” |
-| 7 | “Equinox is near. The parties are smaller. The daughters are kept home.” |
-| 8 | “Angus doesn’t shout. That’s why men fear him.” |
-}}
-
----
-
-# Fort Schema (Node Map)
-Use this as the tactical connectivity reference.
-
-```text
-    (Outside)
-       |
-     [1]--[2]
-      |    |
-     [5]  [6]--[7]--[8]--[9]
-      |     |           |
-     [10]  [11]---------[14]--[23]
-      |     |            |
-     [15]--[16]--[17]--[18]--[13]
-              |     |     |
-             [20]  [21]  [18]
-              |            |
-           (Dungeon)      [19]--[22]--> Escape
-```
-
----
-
-# Room Key (1–23)
-Each entry includes: **Read-Aloud**, **Occupants**, **Treasure/Clues**, **Secrets**, **Dialogue**, **Exits**, and typical **DCs**.
-
-## 1. Gatehouse
-**Read-Aloud.** Iron-ribbed timber doors, damp stone, and lantern light pooled like spilled oil. Above, slits watch the street.
-
-**Occupants.** 2 Purple Dragon Guards.
-
-**Treasure/Clues.** Notice nailed to beam: *“Execution at dawn: Shadowhigh.”* Grain seizure tally.
-
-**Dialogue.**
-- “Governor’s making friends with silk and spellbooks now.”
-- “Dyksterhaus shouts at taxes, but the old houses count bloodlines.”
-
-**Exits.** To 2. Locked access to 5.
-
-**DCs.** Gate lock DC 15 (tools). Quiet entry DC 13 (Stealth).
-
----
-
-## 2. Parade Grounds
-**Read-Aloud.** Hard-packed dirt scored with drill lines. Timber beams stacked for something ugly.
-
-**Occupants.** None stationed; patrols cross.
-
-**Treasure/Clues.** Chalkboard: equinox drills. Ballista components.
-
-**Dialogue.**
-- “Peace is expensive. Somebody always pays.”
-
-**Exits.** To 1 and 6.
-
----
-
-## 5. Stables / Animal Pens (BattleBeast)
-**Read-Aloud.** Straw rot, iron rings, and chains bolted into stone. Breath steams in the lanternlight.
-
-**Occupants.** BattleBeast in irons; 1 chained **Owlbear** (not the prior one); 1 nervous recruit; 1 veteran.
-
-**Treasure/Clues.** Sergeant’s purse (20 gp), a ration chit stamped *“Seizure—Farmland.”*
-
-**Secrets.** **Secret door to 10** (DC 14 Perception).
-
-**Dialogue.**
-- Recruit: “He’s not a man. Not a beast. Just… trouble.”
-- Veteran: “Dawn takes trouble. That’s the order.”
-
-**Exits.** To 1 (locked), to 10, secret to 10.
-
-**DCs.** Pen locks DC 16; Owlbear chain DC 17.
-
----
-
-## 6. Courtyard (Inner)
-**Read-Aloud.** Stone yard around a well. Barrels stacked. Timber for gallows piled like firewood.
-
-**Occupants.** 3 guards.
-
-**Treasure/Clues.** Violet wax droplet on a bucket rim (Varkus’ seal).
-
-**Dialogue.**
-- “Farmers are burning levy wagons. The city pretends it’s weather.”
-
-**Exits.** To 2, 7, 11.
-
----
-
-## 7. Arcade Hall
-**Read-Aloud.** A colonnade beneath the castle wall—open air on one side, stone echo on the other.
-
-**Occupants.** 1 patrolling guard.
-
-**Treasure/Clues.** Scratched graffiti: *“Waterdeep for Waterdeep.”*
-
-**Dialogue.**
-- “Equinox used to be laughter. Now it’s eyes.”
-
-**Exits.** To 6 and 8.
-
----
-
-## 8. Arcade Corridor
-**Read-Aloud.** The hallway tightens; every footstep feels like a confession.
-
-**Occupants.** None stationed.
-
-**Treasure/Clues.** A dropped seal-strip: “Tiffany House—donors pending.”
-
-**Exits.** To 7 and 9.
-
----
-
-## 9. Dispatch Antechamber
-**Read-Aloud.** Ink, quills, and maps of the Dock Ward pinned with brass tacks.
-
-**Occupants.** 2 elite guards.
-
-**Treasure/Clues.** Warehouse map marked in red; a ledger of merchant tax arrears.
-
-**Dialogue.**
-- “Dyksterhaus wants the city’s coin. Varkus wants the city’s spine.”
-
-**Exits.** To 8; locked to 14.
-
-**DCs.** Door to 14 DC 18 (tools) or Ring A.
-
----
-
-## 10. Kitchen & Supplies
-**Read-Aloud.** Onion, grease, and simmered bone. A cook stares like you’ve interrupted war.
-
-**Occupants.** 1 cook (civilian), 2 off-duty guards.
-
-**Treasure/Clues.** Crate: *“War Wizard Restraints.”* Equinox wine (officer-only).
-
-**Dialogue.**
-- Cook: “Old houses don’t love Varkus. They love what he might prevent.”
-
-**Exits.** To 5 and 11.
-
----
-
-## 11. Command & Dispatch (Colonel Angus)
-**Read-Aloud.** A map table, a pegboard of keys, and a horn mounted like a weapon.
-
-**Occupants.** **Colonel Angus** + 2 elite guards.
-
-**Treasure/Clues.** Ring A on pegboard. Letter draft: *“When Roe abdicates…”*
-
-**Secrets.** **Alarm horn sabotage** (DC 18 Thieves’ Tools) disables fort-wide lockdown trigger.
-
-**Dialogue (Angus).**
-- “Noise is for cities without discipline.”
-- “Zanzibar united an empire. He did not ask.”
-
-**Exits.** To 6, 10, 13; locked to 16.
-
-**DCs.** Lock to 16 DC 17 or Ring A.
-
----
-
-## 12. Stairs Up (Inaccessible Tonight)
-**Read-Aloud.** Spiral stone stair behind an iron-bound door that feels like it was built to refuse you.
-
-**Occupants.** None.
-
-**Mechanics.** Locked (Ring B), Arcane Lock (DC 23), barred from above.
-
-**Exits.** Up (no access this session).
-
----
-
-## 13. Barracks
-**Read-Aloud.** Bunks, oil, leather. Men sleeping in armor because the city hates them.
-
-**Occupants.** 6 guards.
-
-**Treasure/Clues.** Dice pot (45 gp). Letter from farmland: *“They’ve taken our cattle again.”*
-
-**Dialogue.**
-- “The nobles toast peace. The merchants toast taxes. We toast not dying.”
-
-**Exits.** To 11 and 18.
-
----
-
-## 14. Infirmary (Lenore) + Long Rest Chamber
-**Read-Aloud.** Clean sheets. A faint abjuration glow in the back room—quiet power, not loud magic.
-
-**Occupants.** 1 medic; **Lenore** (weak).
-
-**Treasure/Clues.** 2 Potions of Healing; officer charts referencing Tiffany House injuries.
-
-**Long Rest Chamber.** A warded room where the fort’s officers recover. If the PCs secure it and hold the doors, they can take a long rest.
-
-**Dialogue.**
-- Medic: “Equinox is meant for renewal. We prepare hangings instead.”
-
-**Exits.** Locked to 9; locked to 19; to 23.
-
----
-
-## 15. Side Gate House
-**Read-Aloud.** A small postern entry with crates and dust. The kind of door people forget until it matters.
-
-**Occupants.** 1 bored guard.
-
-**Treasure/Clues.** Smuggled apples from outside the city (farmland sympathy).
-
-**Dialogue.**
-- “My cousin’s farm got seized. I’m here guarding nobles.”
-
-**Exits.** To 16.
-
----
-
-## 16. Back Hall
-**Read-Aloud.** Stone corridor, torchlit, quiet enough to hear your own breathing lie.
-
-**Occupants.** None stationed.
-
-**Treasure/Clues.** Spare manacles; a broken wax seal with Varkus’ crest.
-
-**Exits.** To 11, 15, 17.
-
----
-
-## 17. Guard Post (Lower)
-**Read-Aloud.** A desk, a lantern, and two men who look like they’ve been told this corridor matters.
-
-**Occupants.** 2 guards.
-
-**Treasure/Clues.** A key tag marked “20” (teaser that keys exist even if they don’t have them).
-
-**Dialogue.**
-- “If the horn blows, we seal the stairs.”
-
-**Exits.** To 16, 18, locked to 20.
-
----
-
-## 18. Lower Barracks / Watch Hall
-**Read-Aloud.** Rougher bunks. Rougher men. The smell of wet wool.
-
-**Occupants.** 2 guards.
-
-**Treasure/Clues.** A wanted broadside: “ap Dyksterhaus—sedition.”
-
-**Dialogue.**
-- “He says taxes are tyranny. Then he spends merchant coin on speeches.”
-
-**Exits.** To 13, 17, 21.
-
----
-
-## 19. Lower Corridor
-**Read-Aloud.** The air grows colder and dirtier, as if the stone itself resents what it carries.
-
-**Occupants.** None.
-
-**Treasure/Clues.** Burn marks on boots—Ard Farkle aftermath detail.
-
-**Exits.** To 14 and 22.
-
----
-
-## 20. Stairs Down (Dungeon Access)
-**Read-Aloud.** A spiral throat descending into torchlit gloom.
-
-**Occupants.** None at the door.
-
-**Mechanics.** Locked (Ring A) or DC 22 tools.
-
-**Exits.** Down to dungeon (Shadowhigh, next session).
-
----
-
-## 21. Guard Room
-**Read-Aloud.** A table, ale, and men who joke too loudly to forget what they do.
-
-**Occupants.** 3 guards.
-
-**Treasure/Clues.** A half-written letter: “To my sister—if the farms rise…”.
-
-**Dialogue.**
-- “Zanzibar would’ve crushed this city in a week.”
-
-**Exits.** To 18.
-
----
-
-## 22. Trash / Escape Postern
-**Read-Aloud.** Refuse pit and a narrow gate leading to the outside stink of the city.
-
-**Occupants.** 2 guards rotate through.
-
-**Treasure/Clues.** A scorched harness buckle (Ard Farkle horses).
-
-**Dialogue.**
-- “If you run, run now. Equinox makes men brave.”
-
-**Exits.** To 19; to outside escape.
-
----
-
-## 23. Inner Storage
-**Read-Aloud.** Powder, rope, and crates stamped with imperial marks.
-
-**Occupants.** None.
-
-**Treasure/Clues.** Ballista bolts; powder keg; sealed invitation list for Tiffany House.
-
-**Secrets.** A loose stone (DC 15 Investigation) hides a note: *“Old houses favor peace. Varkus favors power. Dyksterhaus favors coin.”*
-
-**Exits.** To 14.
-
----
-
-# Encounter Tools
-
-## Patrols (Baseline)
-- **Courtyard loop:** 6 → 7 → 8 → 7 → 6 (every 10 minutes)
-- **Lower loop:** 17 → 18 → 21 → 18 → 17 (every 12 minutes)
-- **Random check:** every 15 minutes roll 1d6; on 1, a runner crosses 2 or 6.
-
-## Owlbear Chaos (Optional Lever)
-If released, roll 1d6:
-1–2 attacks nearest creature, 3–4 flees, 5–6 mauls Purple Dragons first.
-
----
-
-# Stat Blocks
-
-### Purple Dragon Guard
-{{monster
-*Medium humanoid (human), lawful neutral*
-___
-**Armor Class** :: 16 (chain shirt, shield)
-**Hit Points**  :: 27 (5d8+5)
-**Speed**       :: 30 ft.
-___
-|STR|DEX|CON|INT|WIS|CHA|
-|:--:|:--:|:--:|:--:|:--:|:--:|
-|14 (+2)|12 (+1)|12 (+1)|10 (+0)|11 (+0)|11 (+0)|
-___
-**Skills** :: Perception +2, Athletics +4
-**Senses** :: passive Perception 12
-**Languages** :: Common, Chondathan
-**Challenge** :: 1/2 (100 XP)
-___
-***Formation Discipline.*** While within 5 ft. of an ally with a shield, the guard gains +1 AC.
-
-##### Actions
-***Spear.*** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60, one target. Hit: 6 (1d6+2) piercing.
-***Shield Bash (Recharge 5–6).*** +4 to hit; Hit: 4 (1d4+2) bludgeoning and target must succeed on a DC 12 Str save or be knocked prone.
-}}
-
-### Purple Dragon Elite
-{{monster
-*Medium humanoid (human), lawful neutral*
-___
-**Armor Class** :: 18 (half plate)
-**Hit Points**  :: 58 (9d8+18)
-**Speed**       :: 30 ft.
-___
-|STR|DEX|CON|INT|WIS|CHA|
-|:--:|:--:|:--:|:--:|:--:|:--:|
-|16 (+3)|14 (+2)|14 (+2)|11 (+0)|12 (+1)|12 (+1)|
-___
-**Saving Throws** :: Str +6, Con +5
-**Skills** :: Perception +4, Athletics +6, Intimidation +4
-**Senses** :: passive Perception 14
-**Languages** :: Common
-**Challenge** :: 3 (700 XP)
-___
-***Urban Tactics.*** The elite has advantage on opportunity attacks.
-
-##### Actions
-***Multiattack.*** Two longsword attacks.
-***Longsword.*** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8+4) slashing.
-***Net (1/Day).*** Ranged Weapon Attack: +5 to hit, range 5/15. Hit: target is restrained (escape DC 13).
-}}
-
-### War Wizard (Urban Protocol)
-{{monster
-*Medium humanoid (human), lawful neutral*
-___
-**Armor Class** :: 13 (mage armor)
-**Hit Points**  :: 44 (8d8+8)
-**Speed**       :: 30 ft.
-___
-|STR|DEX|CON|INT|WIS|CHA|
-|:--:|:--:|:--:|:--:|:--:|:--:|
-|9 (-1)|14 (+2)|12 (+1)|16 (+3)|12 (+1)|11 (+0)|
-___
-**Saving Throws** :: Int +6, Wis +4
-**Skills** :: Arcana +6, Investigation +6
-**Senses** :: passive Perception 11
-**Languages** :: Common, Draconic
-**Challenge** :: 4 (1,100 XP)
-___
-***Spellcasting.*** The war wizard is a 6th-level spellcaster (Int; save DC 14, +6 to hit).
-
-At will: *mage hand, message, minor illusion*  
-3/day each: *shield, misty step, hold person*  
-2/day each: *counterspell, web*  
-1/day each: *arcane lock* (already on 12)
-
-##### Actions
-***Dagger.*** +4 to hit; 4 (1d4+2) piercing.
-}}
-
-### Colonel Angus (Mini-Boss)
-{{monster
-*Medium humanoid (human), lawful neutral*
-___
-**Armor Class** :: 19 (breastplate, defensive training)
-**Hit Points**  :: 110 (13d8+52)
-**Speed**       :: 30 ft.
-___
-|STR|DEX|CON|INT|WIS|CHA|
-|:--:|:--:|:--:|:--:|:--:|:--:|
-|18 (+4)|16 (+3)|18 (+4)|12 (+1)|14 (+2)|13 (+1)|
-___
-**Saving Throws** :: Str +8, Dex +7, Con +8, Wis +6
-**Skills** :: Athletics +8, Insight +6, Perception +6
-**Senses** :: passive Perception 16
-**Languages** :: Common
-**Challenge** :: 7 (2,900 XP)
-___
-***Perfect Soldier.*** Angus has advantage on saving throws against being frightened or charmed.
-
-***Command Presence (1/Turn).*** When an allied Purple Dragon within 30 ft. hits with an attack, Angus can add +3 damage.
-
-***Parry.*** Angus adds +3 to AC against one melee attack that would hit him. Must see the attacker and be wielding a melee weapon.
-
-***Relentless (1/Day).*** When reduced to 0 HP, Angus drops to 1 HP instead.
-
-##### Actions
-***Multiattack.*** Angus makes three attacks (two saber, one pommel or pistol).
-
-***Saber.*** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d8+5) slashing.
-
-***Pommel Strike.*** Melee Weapon Attack: +8 to hit. Hit: 7 (1d6+4) bludgeoning, and target must succeed on a DC 15 Con save or be **stunned** until the end of its next turn. (Recharge 5–6)
-
-***Pistol (Urban Issue).*** Ranged Weapon Attack: +7 to hit, range 30/90, one target. Hit: 9 (1d10+3) piercing. (Reload 2)
-
-##### Reactions
-***Cut the Line.*** When a creature within 5 ft. of Angus moves away, Angus may make a Saber attack against it.
-
-##### Bonus Actions
-***Seal the Room.*** Angus orders an ally to bar a door within 30 ft. (if physically possible).
-}}
-
----
-
-# Treasure & Rewards
-- **Lenore recovered**: access to Long Rest Chamber (14).
-- **Ring A**: keys enabling dungeon access next session.
-- **Evidence**: Tiffany House donor list (23), grain seizure tallies (1/9/11), farmland letters (13/21).
-
----
-
-# Maps (Placeholders)
-## Overhead Tactical Map
-*Replace this section with your exported grid map when ready.*
-- Suggested scale: **5 ft per square**
-- Suggested layout: rooms as in node map; courtyard 6 is central anchor
-
-## Exterior Fort Sketch
-*Replace with exterior art / top-down of walls, gatehouse, and battlements.*
-- Gallows timber visible from outside
-- War Wizard lanterns on battlements (upstairs)
-
----
-
-# Appendix: DM Quick-Start
-1) Start at **(2) Parade Grounds** with distant fort sounds.  
-2) Put one patrol in **(7)** and one in **(6)**.  
-3) Make **(14) Infirmary** the “win condition” of the night (safe long rest).  
-4) Make **(11) Angus** the danger: beatable, but likely avoided.
-
-{{note
-##### Design Intent
-Shortcuts are hard (high DC). Long routes are safer. Failure escalates locally; only the horn in (11) escalates globally.
-}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fort Maximillien — A Stealth Prison-Break in Occupied Waterdeep</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Spectral:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+  :root {
+    --parchment: #fdf5e6;
+    --parchment-dark: #f0e4cc;
+    --ink: #1a1207;
+    --ink-light: #3d2e1a;
+    --accent: #7b2d26;
+    --accent-dark: #5a1a15;
+    --accent-gold: #8b7635;
+    --border: #c4a882;
+    --border-dark: #9e845e;
+    --stat-bg: #faf3e0;
+    --stat-border: #c9ad6a;
+    --note-bg: #f5edda;
+    --shadow: rgba(0,0,0,0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Crimson Text', 'Georgia', serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--ink);
+    background: #2c2416;
+  }
+
+  .page-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--parchment);
+    box-shadow: 0 0 60px rgba(0,0,0,0.5);
+    min-height: 100vh;
+  }
+
+  .content {
+    padding: 3rem 3.5rem;
+  }
+
+  @media (max-width: 700px) {
+    .content { padding: 1.5rem 1.2rem; }
+    body { font-size: 15px; }
+  }
+
+  /* ── Typography ────────────────────────── */
+
+  h1 {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 1.15;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.06);
+  }
+
+  h1 + .subtitle {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--ink-light);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+  }
+
+  .tagline {
+    font-family: 'Spectral', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    text-align: center;
+    color: var(--ink-light);
+    opacity: 0.8;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--accent);
+    border-bottom: 2px solid var(--stat-border);
+    padding-bottom: 0.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.03em;
+  }
+
+  h3 {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--accent-dark);
+    margin-top: 1.8rem;
+    margin-bottom: 0.6rem;
+  }
+
+  h4 {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.02em;
+  }
+
+  p { margin-bottom: 0.7rem; }
+
+  strong { font-weight: 700; color: var(--ink); }
+
+  em { font-style: italic; }
+
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--border); }
+  a:hover { color: var(--accent-dark); }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2rem 0;
+  }
+
+  hr.heavy {
+    border-top: 3px double var(--border-dark);
+    margin: 2.5rem 0;
+  }
+
+  /* ── Epigraph ──────────────────────────── */
+
+  .epigraph {
+    text-align: center;
+    margin: 1.5rem 2rem 2.5rem;
+    padding: 1.2rem 1.5rem;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .epigraph p {
+    font-family: 'Spectral', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--ink-light);
+    margin-bottom: 0.4rem;
+  }
+
+  .epigraph .attribution {
+    font-family: 'Cinzel', serif;
+    font-style: normal;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+  }
+
+  /* ── Blockquote / Callouts ─────────────── */
+
+  blockquote {
+    border-left: 4px solid var(--stat-border);
+    margin: 1rem 0;
+    padding: 0.6rem 1.2rem;
+    background: var(--note-bg);
+    font-style: italic;
+    color: var(--ink-light);
+  }
+
+  blockquote p { margin-bottom: 0.3rem; }
+
+  /* ── Note Box ──────────────────────────── */
+
+  .note {
+    background: var(--note-bg);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 1rem 1.2rem;
+    margin: 1.2rem 0;
+    font-size: 0.93rem;
+  }
+
+  .note h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+    color: var(--accent);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* ── Descriptive Box ───────────────────── */
+
+  .descriptive {
+    background: linear-gradient(135deg, var(--note-bg) 0%, #f8f0dc 100%);
+    border: 1px solid var(--stat-border);
+    border-left: 4px solid var(--accent);
+    padding: 1rem 1.2rem;
+    margin: 1.2rem 0;
+    font-size: 0.95rem;
+  }
+
+  /* ── Tables ────────────────────────────── */
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+  }
+
+  thead th {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: 2px solid var(--stat-border);
+    padding: 0.5rem 0.6rem;
+    text-align: left;
+  }
+
+  tbody td {
+    padding: 0.4rem 0.6rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  tbody tr:nth-child(even) { background: var(--note-bg); }
+
+  /* small ability-score table */
+  .ability-scores {
+    width: auto;
+    margin: 0.5rem auto;
+    text-align: center;
+  }
+  .ability-scores th,
+  .ability-scores td {
+    text-align: center;
+    padding: 0.2rem 0.7rem;
+    font-size: 0.9rem;
+  }
+  .ability-scores th { color: var(--accent); }
+  .ability-scores tbody tr:nth-child(even) { background: transparent; }
+
+  /* ── Stat Block ────────────────────────── */
+
+  .stat-block {
+    background: var(--stat-bg);
+    border: 1px solid var(--stat-border);
+    border-top: 3px solid var(--accent);
+    border-bottom: 3px solid var(--accent);
+    padding: 1.2rem 1.4rem;
+    margin: 1.5rem 0;
+    page-break-inside: avoid;
+    max-width: 500px;
+  }
+
+  .stat-block .creature-name {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: var(--accent);
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+
+  .stat-block .creature-type {
+    font-family: 'Spectral', serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--ink-light);
+    margin-bottom: 0.6rem;
+  }
+
+  .stat-block .stat-sep {
+    border: none;
+    border-top: 2px solid var(--accent);
+    opacity: 0.5;
+    margin: 0.5rem 0;
+  }
+
+  .stat-block .stat-line {
+    font-size: 0.92rem;
+    margin-bottom: 0.15rem;
+    line-height: 1.4;
+  }
+
+  .stat-block .stat-line strong { color: var(--ink); }
+
+  .stat-block .section-header {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid var(--stat-border);
+    margin-top: 0.7rem;
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.15rem;
+  }
+
+  .stat-block .trait-name {
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .stat-block p {
+    font-size: 0.92rem;
+    margin-bottom: 0.35rem;
+    line-height: 1.45;
+  }
+
+  /* ── Room Entry ────────────────────────── */
+
+  .room {
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+  }
+
+  .room h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: var(--accent-dark);
+  }
+
+  .room .room-number {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: var(--accent);
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+  }
+
+  .room .read-aloud {
+    font-style: italic;
+    color: var(--ink-light);
+    border-left: 3px solid var(--accent);
+    padding: 0.5rem 1rem;
+    margin: 0.6rem 0;
+    background: rgba(125, 45, 38, 0.03);
+  }
+
+  .room .field-label {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 0.7rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .room .dialogue {
+    margin-left: 1rem;
+    font-style: italic;
+  }
+
+  .room .dialogue p { margin-bottom: 0.25rem; }
+
+  .room .exits, .room .dcs {
+    font-size: 0.93rem;
+    color: var(--ink-light);
+  }
+
+  /* ── Node Map ──────────────────────────── */
+
+  .node-map {
+    background: #1a1207;
+    color: #d4c5a0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    padding: 1.5rem 1.8rem;
+    border-radius: 3px;
+    margin: 1rem 0;
+    overflow-x: auto;
+    white-space: pre;
+    border: 1px solid var(--border-dark);
+  }
+
+  /* ── Two-Column ────────────────────────── */
+
+  .two-col {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+
+  @media (max-width: 700px) {
+    .two-col { column-count: 1; }
+    .stat-block { max-width: 100%; }
+  }
+
+  /* ── Lists ─────────────────────────────── */
+
+  ul, ol {
+    margin: 0.5rem 0 0.8rem 1.5rem;
+  }
+
+  li { margin-bottom: 0.25rem; }
+
+  /* ── Print ─────────────────────────────── */
+
+  @media print {
+    body { background: white; }
+    .page-container { box-shadow: none; }
+    .content { padding: 1.5rem; }
+    .stat-block { page-break-inside: avoid; }
+    .room { page-break-inside: avoid; }
+  }
+
+  /* ── Decorative header line ────────────── */
+  .header-rule {
+    width: 40%;
+    margin: 0 auto 0.5rem;
+    border: none;
+    border-top: 2px solid var(--stat-border);
+  }
+
+  .section-intro {
+    font-family: 'Spectral', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--ink-light);
+    margin-bottom: 1rem;
+  }
+
+  /* ── Summary box ────────────────────────── */
+  .summary-box {
+    background: var(--note-bg);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--accent);
+    padding: 1rem 1.2rem;
+    margin: 1.2rem 0;
+  }
+  .summary-box h4 { margin-top: 0; }
+
+  /* ── Key table ──────────────────────────── */
+  .key-table td:first-child {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    color: var(--accent);
+  }
+
+  /* ── Footer ─────────────────────────────── */
+  .page-footer {
+    text-align: center;
+    padding: 2rem 1rem 1.5rem;
+    border-top: 1px solid var(--border);
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: var(--border-dark);
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<div class="page-container">
+<div class="content">
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- TITLE                                       -->
+<!-- ═══════════════════════════════════════════ -->
+
+<h1>Fort Maximillien</h1>
+<p class="subtitle">A Stealth Prison-Break in Occupied Waterdeep</p>
+<p class="tagline">For a wounded 5th-level party. Two PCs free. Two captured. One interrogated upstairs. One awaiting the gallows below.</p>
+
+<div class="epigraph">
+  <p>&ldquo;Peace is maintained, not requested.&rdquo;</p>
+  <p class="attribution">Colonel Angus, Urban Detachment of the Purple Dragons</p>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- ADVENTURE SUMMARY                           -->
+<!-- ═══════════════════════════════════════════ -->
+
+<h2>Adventure Summary</h2>
+
+<p><strong>Fort Maximillien</strong> is a fortified garrison and guard post in Waterdeep, held by a <strong>Cormyrean Purple Dragon urban detachment</strong> under the command of <strong>General Peterbilt Varkus</strong>, Marshall of the Western Vanguard and Imperial Governor of Waterdeep.</p>
+
+<p>The fort was built on the ruins of the tavern where the final battle against <strong>Asmodeus</strong> took place at the close of the <strong>Infanta Crisis</strong> &mdash; five centuries of holy war that ended with the founding of the Cormyrean Empire. The site was consecrated, then fortified, then forgotten by everyone except the soldiers garrisoned inside it.</p>
+
+<div class="summary-box">
+  <h4>Tonight&rsquo;s Objective (This Session)</h4>
+  <ul>
+    <li><strong>Extract Lenore</strong> from the locked Infirmary (14) and secure a safe <strong>Long Rest Chamber</strong>.</li>
+    <li><strong>Extract BattleBeast</strong> from the Pens (5).</li>
+    <li>Escape alive.</li>
+  </ul>
+  <h4>Next Session Hooks (Do Not Fully Resolve Tonight)</h4>
+  <ul>
+    <li><strong>Maverick</strong> is held upstairs for interrogation by <strong>General Varkus</strong>.</li>
+    <li><strong>Shadowhigh</strong> is in the dungeon below, scheduled for hanging at dawn unless events change.</li>
+  </ul>
+</div>
+
+<hr class="heavy">
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- BACKGROUND & POLITICAL FAULT LINES          -->
+<!-- ═══════════════════════════════════════════ -->
+
+<h2>Background &amp; Political Fault Lines</h2>
+
+<p class="section-intro">Waterdeep is not a frontier town, and it hates being treated like one.</p>
+
+<h3>The Empire</h3>
+
+<p>The Cormyrean Empire was forged five hundred years ago by <strong>Zanzibar the Elder</strong>, the First Emperor of Faer&ucirc;n, following the defeat of Asmodeus and the end of the Infanta Crisis. The state patron deity <strong>Zarus</strong> &mdash; god of sentinels, conquest, and humanity triumphant &mdash; blessed the Zanzibar&rsquo;s bloodline to rule forever. Every emperor since has claimed descent from holy blood.</p>
+
+<p>The current emperor, <strong>Zanzibar William the Melancholy</strong>, formerly Prince William Wenly Zarusson, has occupied the Glass Throne for only a month following the death of his elderly father <strong>Zanzibar the Penitent</strong>. Known as a holy and pious man to all but those who knew him, the late emperor gave over nearly all political and military control of the Empire to his armies, his rivals, and his laconic son. The result is an empire loosening at every joint.</p>
+
+<h3>The Factions</h3>
+
+<p><strong>General Varkus (Imperial Governor).</strong> Born in Sembia as the third son of a minor lord, Peterbilt Varkus joined the occupying Cormyrean forces as a squire to Sir Horis Jannassar, a Purple Dragon Knight with roots in Waterdeep and Calamshan. He rose through the ranks of the Imperial Vanguard to command <strong>The Violets</strong>, an elite cavalry and mage detachment known for violet-plumed helms and brutal precision. Their invasion of the Anauroch in DR 1993 was immortalized in Volothamp Geddarm&rsquo;s popular novel <em>Violets on the Dune</em>, making Varkus a folk hero.</p>
+
+<p>Zanzibar the Penitent named him Marshall of the Western Vanguard and charged him with the governorship of Waterdeep &mdash; as much to guard the Empire&rsquo;s westerly flank as to remove Varkus from the capital.</p>
+
+<p>Now, with the Empire weakening under William the Melancholy, Varkus has proclaimed the <strong>March of the Free West</strong> &mdash; declaring loyalty not to the throne, but to the people of the Empire and its most exalted institutions. He is courting Waterdeep&rsquo;s old-money elite and ancient trades &mdash; <strong>a new development</strong>. Before he can march on the capital, he must secure his rear, where conspirators in league with the Zanzibar and rival rebellions seek to ruin him.</p>
+
+<p><strong>The Unmasked Lord ap Dyksterhaus.</strong> Openly flaunts imperial customs, rails against overtaxation, and champions merchant interests. His base is the merchant class and those who profit from them. He refused to visit the imperial capital and pay tribute to the lame duck emperor.</p>
+
+<p><strong>The Old Houses.</strong> Ancient wealth and older magic. They despise the merchant class but love imperial peace, trade routes, and access. Varkus courting them is a tectonic shift &mdash; the old families that predate the Empire now dining with the man who commands its armies.</p>
+
+<p><strong>The Farmlands.</strong> Revolts flare beyond the city over imperial seizure of grain and cattle. Farmers burn levy wagons. The garrison eats while the countryside starves.</p>
+
+<div class="descriptive">
+  <h4>The Four Rebellions</h4>
+  <p>Varkus is not the only one who smells the Empire&rsquo;s weakness. Across Faer&ucirc;n, four factions have risen against the Melancholy Emperor:</p>
+  <ol>
+    <li><strong>The Zarus Cult</strong> &mdash; A zealot princeling named Zellmo, raised by prophecy to believe himself the new Infanta of Zarus, demands the throne.</li>
+    <li><strong>The Witch Queen of Myth Drannor</strong> &mdash; Princess Zythara, once the Emperor&rsquo;s favored cousin, was stripped of titles for defying ecclesiastical oversight of arcane study. She fled to Myth Drannor, rekindled its mythal, and now her agents move unseen across the plane.</li>
+    <li><strong>General Varkus and the Purple Dragons</strong> &mdash; The March of the Free West.</li>
+    <li><strong>The Negende Zonen (Zooners)</strong> &mdash; Brigands and outlaws in the Anauroch led by Modle Negen, who claims descent from the Zanzibars of old.</li>
+  </ol>
+</div>
+
+<h3>Recent Incidents (Tonight)</h3>
+<ul>
+  <li>A <strong>foiled heist at Tiffany House</strong>, where Varkus was raising funds and making friends among the elite. The party was involved in foiling it.</li>
+  <li>A violent incident at <strong>Ard Farkle&rsquo;s</strong>: a convict now held in the fort fired into bystanders. <strong>Carts burned and horses died.</strong> The party was involved.</li>
+  <li>The vernal equinox approaches. The parties are thinner. The city&rsquo;s smiles feel rented.</li>
+</ul>
+
+<hr class="heavy">
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- RUNNING THE FORT                            -->
+<!-- ═══════════════════════════════════════════ -->
+
+<h2>Running the Fort</h2>
+
+<p class="section-intro">This module is built to avoid &ldquo;one bad roll = TPK.&rdquo; It is a pressure system.</p>
+
+<h3>Zone Alerts (Localized)</h3>
+
+<p>Track alert separately for each zone:</p>
+
+<table>
+<thead><tr><th>Zone</th><th>Area</th><th>Rooms</th></tr></thead>
+<tbody>
+  <tr><td><strong>A</strong></td><td>Exterior / Gate</td><td>1&ndash;2</td></tr>
+  <tr><td><strong>B</strong></td><td>Courtyard &amp; Arcade</td><td>6&ndash;9</td></tr>
+  <tr><td><strong>C</strong></td><td>Service &amp; Command</td><td>10&ndash;13</td></tr>
+  <tr><td><strong>D</strong></td><td>Lower Halls</td><td>14&ndash;22</td></tr>
+</tbody>
+</table>
+
+<table>
+<thead><tr><th>Alert</th><th>State</th><th>Effect</th></tr></thead>
+<tbody>
+  <tr><td><strong>0</strong></td><td>Normal</td><td>Routine patrols.</td></tr>
+  <tr><td><strong>1</strong></td><td>Suspicious</td><td>Doubled checks, a runner dispatched.</td></tr>
+  <tr><td><strong>2</strong></td><td>Active Search</td><td>Doors watched, patrols tighten.</td></tr>
+  <tr><td><strong>3</strong></td><td>Lockdown</td><td>Doors barred, reinforcements stage.</td></tr>
+</tbody>
+</table>
+
+<p><strong>Fort-wide Lockdown</strong> only happens if the <strong>Dispatch Horn</strong> in (11) is sounded.</p>
+
+<h3>Keys (Two Rings)</h3>
+
+<p><strong>Ring A (on wall pegboard in 11):</strong> Infirmary (14), Back Hall (16), Dungeon stairs (20).</p>
+<p><strong>Ring B (on Colonel Angus):</strong> Stairs Up (12), Alarm Cabinet, upstairs protocols.</p>
+<p><strong>Key Visibility:</strong> The pegboard is visible from the doorway of (11). Ring B is clipped to Angus&rsquo; sword belt.</p>
+
+<h3>Stairs Up Are Inaccessible Tonight</h3>
+
+<p>The <strong>stairs up (12)</strong> are:</p>
+<ul>
+  <li>Locked (Ring B)</li>
+  <li>Under <strong>Arcane Lock</strong> from above (War Wizard protocol)</li>
+  <li><strong>Barred from the top</strong> (physical bar)</li>
+</ul>
+<p>Even with Ring B, opening (12) requires upstairs access. This keeps tonight focused.</p>
+
+<h3>Lock Difficulty Tiers</h3>
+
+<table class="key-table">
+<thead><tr><th>Path</th><th>DC</th><th>Notes</th></tr></thead>
+<tbody>
+  <tr><td>Gate (1)</td><td>15</td><td>Thieves&rsquo; tools</td></tr>
+  <tr><td>Pens (5)</td><td>16</td><td>Pen locks</td></tr>
+  <tr><td>Owlbear chain</td><td>17</td><td>Heavy chain</td></tr>
+  <tr><td>Secret door 5&rarr;10</td><td>14</td><td>Perception to find</td></tr>
+  <tr><td>Dispatch to Infirmary (9&rarr;14)</td><td>18</td><td>Tools or Ring A</td></tr>
+  <tr><td>Command to Back Hall (11&rarr;16)</td><td>17</td><td>Tools or Ring A</td></tr>
+  <tr><td>Dungeon stairs (20)</td><td>22</td><td>Tools or Ring A</td></tr>
+  <tr><td>Stairs Up (12)</td><td>23</td><td>Ring B + Arcane Lock + bar</td></tr>
+  <tr><td>Alarm horn sabotage (11)</td><td>18</td><td>Thieves&rsquo; tools</td></tr>
+</tbody>
+</table>
+
+<div class="note">
+  <h4>Design Intent</h4>
+  <p>Shortcuts are hard (high DC). Long routes are safer. Failure escalates locally; only the horn in (11) escalates globally.</p>
+</div>
+
+<hr class="heavy">
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- RUMORS                                      -->
+<!-- ═══════════════════════════════════════════ -->
+
+<h2>Rumors &amp; Overheard Talk</h2>
+
+<p>Roll or pick when PCs pause to listen.</p>
+
+<table>
+<thead><tr><th style="width:3rem;text-align:right">d8</th><th>Rumor</th></tr></thead>
+<tbody>
+  <tr><td style="text-align:right">1</td><td>&ldquo;Dyksterhaus says the Emperor bleeds merchants dry while nobles dine.&rdquo;</td></tr>
+  <tr><td style="text-align:right">2</td><td>&ldquo;Varkus wants Zanzibar&rsquo;s kind of unity &mdash; steel first, then peace.&rdquo;</td></tr>
+  <tr><td style="text-align:right">3</td><td>&ldquo;The old houses like imperial peace. They don&rsquo;t like merchants.&rdquo;</td></tr>
+  <tr><td style="text-align:right">4</td><td>&ldquo;Farmland levies doubled. They&rsquo;re burning tallies outside the walls.&rdquo;</td></tr>
+  <tr><td style="text-align:right">5</td><td>&ldquo;Tiffany House welcomed Varkus. That&rsquo;s new. That&rsquo;s dangerous.&rdquo;</td></tr>
+  <tr><td style="text-align:right">6</td><td>&ldquo;At Ard Farkle&rsquo;s, someone fired into the street. Horses burned in trace.&rdquo;</td></tr>
+  <tr><td style="text-align:right">7</td><td>&ldquo;Equinox is near. The parties are smaller. The daughters are kept home.&rdquo;</td></tr>
+  <tr><td style="text-align:right">8</td><td>&ldquo;Angus doesn&rsquo;t shout. That&rsquo;s why men fear him.&rdquo;</td></tr>
+</tbody>
+</table>
+
+<hr class="heavy">
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- NODE MAP                                    -->
+<!-- ═══════════════════════════════════════════ -->
+
+<h2>Fort Schema (Node Map)</h2>
+
+<p>Use this as the tactical connectivity reference.</p>
+
+<div class="node-map">        (Outside)
+           |
+         [1]──[2]
+          |    |
+         [5]  [6]──[7]──[8]──[9]
+          |    |               |
+        [10]  [11]────────────[14]──[23]
+          |    |               |
+        [15]──[16]──[17]     [19]
+                |    |         |
+              [20]  [18]─[13] [22]──▸ Escape
+                |    |
+            (Dungeon)[21]</div>
+
+<h3>Multiple Routes</h3>
+
+<p><strong>Stealth Route (Low Combat):</strong> 1 &rarr; 5 &rarr; Secret &rarr; 10 &rarr; 11 (steal Ring A quietly) &rarr; 14 (Long Rest)</p>
+<p><strong>Arcade Route:</strong> 1 &rarr; 2 &rarr; 6 &rarr; 7 &rarr; 8 &rarr; 9 &rarr; 14</p>
+<p><strong>Chaos Route:</strong> Free the Owlbear. Use distraction to isolate Angus. Grab keys.</p>
+<p><strong>Emergency Escape:</strong> 14 &rarr; 19 &rarr; 22 &rarr; Outside</p>
+
+<hr class="heavy">
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- ROOM KEY                                    -->
+<!-- ═══════════════════════════════════════════ -->
+
+<h2>Room Key (1&ndash;23)</h2>
+
+<p class="section-intro">Each entry includes: Read-Aloud, Occupants, Treasure/Clues, Secrets, Dialogue, Exits, and typical DCs.</p>
+
+<!-- ── ROOM 1 ─────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">1</span> Gatehouse</h3>
+  <div class="read-aloud">Iron-ribbed timber doors, damp stone, and lantern light pooled like spilled oil. Above, slits watch the street.</div>
+  <p class="field-label">Occupants</p>
+  <p>2 Purple Dragon Guards.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>Notice nailed to beam: <em>&ldquo;Execution at dawn: Shadowhigh.&rdquo;</em> Grain seizure tally.</p>
+  <p class="field-label">Dialogue</p>
+  <div class="dialogue">
+    <p>&ldquo;Governor&rsquo;s making friends with silk and spellbooks now.&rdquo;</p>
+    <p>&ldquo;Dyksterhaus shouts at taxes, but the old houses count bloodlines.&rdquo;</p>
+  </div>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 2. Locked access to 5.</p>
+  <p class="field-label">DCs</p>
+  <p class="dcs">Gate lock DC 15 (tools). Quiet entry DC 13 (Stealth).</p>
+</div>
+
+<!-- ── ROOM 2 ─────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">2</span> Parade Grounds</h3>
+  <div class="read-aloud">Hard-packed dirt scored with drill lines. Timber beams stacked for something ugly.</div>
+  <p class="field-label">Occupants</p>
+  <p>None stationed; patrols cross.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>Chalkboard: equinox drills. Ballista components.</p>
+  <p class="field-label">Dialogue</p>
+  <div class="dialogue"><p>&ldquo;Peace is expensive. Somebody always pays.&rdquo;</p></div>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 1 and 6.</p>
+</div>
+
+<!-- ── ROOM 5 ─────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">5</span> Stables / Animal Pens <em>(BattleBeast)</em></h3>
+  <div class="read-aloud">Straw rot, iron rings, and chains bolted into stone. Breath steams in the lanternlight.</div>
+  <p class="field-label">Occupants</p>
+  <p>BattleBeast in irons; 1 chained <strong>Owlbear</strong> (younger, captured from High Forest, sedated but restless); 1 nervous recruit; 1 veteran.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>Sergeant&rsquo;s purse (20 gp), a ration chit stamped <em>&ldquo;Seizure &mdash; Farmland.&rdquo;</em></p>
+  <p class="field-label">Secrets</p>
+  <p><strong>Secret door to 10</strong> (DC 14 Perception). Loose chain bolt (DC 14 Investigation) weakens BB&rsquo;s restraints.</p>
+  <p class="field-label">Dialogue</p>
+  <div class="dialogue">
+    <p>Recruit: &ldquo;He&rsquo;s not a man. Not a beast. Just&hellip; trouble.&rdquo;</p>
+    <p>Veteran: &ldquo;Dawn takes trouble. That&rsquo;s the order.&rdquo;</p>
+  </div>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 1 (locked), to 10, secret to 10.</p>
+  <p class="field-label">DCs</p>
+  <p class="dcs">Pen locks DC 16; Owlbear chain DC 17.</p>
+</div>
+
+<!-- ── ROOM 6 ─────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">6</span> Courtyard (Inner)</h3>
+  <div class="read-aloud">Stone yard around a well. Barrels stacked. Timber for gallows piled like firewood.</div>
+  <p class="field-label">Occupants</p>
+  <p>3 guards.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>Violet wax droplet on a bucket rim (Varkus&rsquo; seal). Gallows timber marked with tomorrow&rsquo;s date.</p>
+  <p class="field-label">Dialogue</p>
+  <div class="dialogue"><p>&ldquo;Farmers are burning levy wagons. The city pretends it&rsquo;s weather.&rdquo;</p></div>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 2, 7, 11.</p>
+</div>
+
+<!-- ── ROOM 7 ─────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">7</span> Arcade Hall</h3>
+  <div class="read-aloud">A colonnade beneath the castle wall &mdash; open air on one side, stone echo on the other.</div>
+  <p class="field-label">Occupants</p>
+  <p>1 patrolling guard.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>Scratched graffiti: <em>&ldquo;Waterdeep for Waterdeep.&rdquo;</em></p>
+  <p class="field-label">Dialogue</p>
+  <div class="dialogue"><p>&ldquo;Equinox used to be laughter. Now it&rsquo;s eyes.&rdquo;</p></div>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 6 and 8.</p>
+</div>
+
+<!-- ── ROOM 8 ─────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">8</span> Arcade Corridor</h3>
+  <div class="read-aloud">The hallway tightens; every footstep feels like a confession.</div>
+  <p class="field-label">Occupants</p>
+  <p>None stationed.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>A dropped seal-strip: &ldquo;Tiffany House &mdash; donors pending.&rdquo;</p>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 7 and 9.</p>
+</div>
+
+<!-- ── ROOM 9 ─────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">9</span> Dispatch Antechamber</h3>
+  <div class="read-aloud">Ink, quills, and maps of the Dock Ward pinned with brass tacks.</div>
+  <p class="field-label">Occupants</p>
+  <p>2 elite guards.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>Warehouse map marked in red; a ledger of merchant tax arrears.</p>
+  <p class="field-label">Dialogue</p>
+  <div class="dialogue"><p>&ldquo;Dyksterhaus wants the city&rsquo;s coin. Varkus wants the city&rsquo;s spine.&rdquo;</p></div>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 8; locked to 14.</p>
+  <p class="field-label">DCs</p>
+  <p class="dcs">Door to 14 DC 18 (tools) or Ring A.</p>
+</div>
+
+<!-- ── ROOM 10 ────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">10</span> Kitchen &amp; Supplies</h3>
+  <div class="read-aloud">Onion, grease, and simmered bone. A cook stares like you&rsquo;ve interrupted war.</div>
+  <p class="field-label">Occupants</p>
+  <p>1 cook (civilian), 2 off-duty guards.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>Crate: <em>&ldquo;War Wizard Restraints.&rdquo;</em> Equinox wine (officer-only). Ration disparity &mdash; officers eat well, troops do not.</p>
+  <p class="field-label">Dialogue</p>
+  <div class="dialogue">
+    <p>Cook: &ldquo;Old houses don&rsquo;t love Varkus. They love what he might prevent.&rdquo;</p>
+    <p>Guard: &ldquo;Zanzibar forged an empire. Varkus just wants to hold one.&rdquo;</p>
+  </div>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 5 and 11.</p>
+</div>
+
+<!-- ── ROOM 11 ────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">11</span> Command &amp; Dispatch <em>(Colonel Angus)</em></h3>
+  <div class="read-aloud">A map table, a pegboard of keys, and a horn mounted like a weapon.</div>
+  <p class="field-label">Occupants</p>
+  <p><strong>Colonel Angus</strong> + 2 elite guards.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>Ring A on pegboard. Letter draft: <em>&ldquo;When Roe abdicates, Waterdeep must already be aligned.&rdquo;</em> Map of Waterdeep districts with colored markers. Grain requisition tallies. Shipment ledger: <em>&ldquo;Powder. Ballista heads. Reinforced timbers.&rdquo;</em></p>
+  <p class="field-label">Secrets</p>
+  <p><strong>Alarm horn sabotage</strong> (DC 18 Thieves&rsquo; Tools) disables fort-wide lockdown trigger.</p>
+  <p class="field-label">Dialogue (Angus)</p>
+  <div class="dialogue">
+    <p>&ldquo;Noise is for cities without discipline.&rdquo;</p>
+    <p>&ldquo;Zanzibar united an empire. He did not ask.&rdquo;</p>
+    <p>&ldquo;Dyksterhaus mistakes taxation for tyranny.&rdquo;</p>
+    <p>If confronted: &ldquo;Weapons down. You have made a series of poor calculations.&rdquo;</p>
+    <p>If wounded: &ldquo;Good. You are competent. I had hoped so.&rdquo;</p>
+    <p>If losing: &ldquo;Retreat. Regroup. Seal the courtyard.&rdquo;</p>
+  </div>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 6, 10, 13; locked to 16.</p>
+  <p class="field-label">DCs</p>
+  <p class="dcs">Lock to 16 DC 17 or Ring A.</p>
+</div>
+
+<!-- ── ROOM 12 ────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">12</span> Stairs Up <em>(Inaccessible Tonight)</em></h3>
+  <div class="read-aloud">Spiral stone stair behind an iron-bound door that feels like it was built to refuse you.</div>
+  <p class="field-label">Occupants</p>
+  <p>None.</p>
+  <p class="field-label">Mechanics</p>
+  <p>Locked (Ring B), Arcane Lock (DC 23), barred from above. War Wizard upstairs maintains the Arcane Lock nightly during equinox season. Upstairs holds General Varkus, the War Wizards, artillery overlooking the courtyard, and Maverick under interrogation.</p>
+  <p class="field-label">Exits</p>
+  <p class="exits">Up (no access this session).</p>
+</div>
+
+<!-- ── ROOM 13 ────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">13</span> Barracks</h3>
+  <div class="read-aloud">Bunks, oil, leather. Men sleeping in armor because the city hates them.</div>
+  <p class="field-label">Occupants</p>
+  <p>6 guards.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>Dice pot (45 gp). Letter from farmland: <em>&ldquo;They&rsquo;ve taken our cattle again.&rdquo;</em> Gambling: odds on whether the Emperor abdicates before winter.</p>
+  <p class="field-label">Dialogue</p>
+  <div class="dialogue">
+    <p>&ldquo;The nobles toast peace. The merchants toast taxes. We toast not dying.&rdquo;</p>
+    <p>&ldquo;I joined for coin. Not for politics.&rdquo;</p>
+  </div>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 11 and 18.</p>
+</div>
+
+<!-- ── ROOM 14 ────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">14</span> Infirmary <em>(Lenore) + Long Rest Chamber</em></h3>
+  <div class="read-aloud">Clean sheets. A faint abjuration glow in the back room &mdash; quiet power, not loud magic.</div>
+  <p class="field-label">Occupants</p>
+  <p>1 medic; <strong>Lenore</strong> (weak).</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>2 Potions of Healing; officer charts referencing Tiffany House injuries. An officer wounded in the Tiffany House scuffle lies in the far bed.</p>
+  <p class="field-label">Long Rest Chamber</p>
+  <p>A warded room where the fort&rsquo;s officers recover. The site was originally consecrated after the battle against Asmodeus &mdash; the abjuration magic is ancient, layered into the stone. If the PCs secure it and hold the doors, they can take a long rest.</p>
+  <p class="field-label">Dialogue</p>
+  <div class="dialogue">
+    <p>Medic: &ldquo;Equinox is meant for renewal. We prepare hangings instead.&rdquo;</p>
+    <p>To Lenore: &ldquo;You&rsquo;re not like the others. That&rsquo;s your curse.&rdquo;</p>
+  </div>
+  <p class="field-label">Exits</p>
+  <p class="exits">Locked to 9; locked to 19; to 23.</p>
+</div>
+
+<!-- ── ROOM 15 ────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">15</span> Side Gate House</h3>
+  <div class="read-aloud">A small postern entry with crates and dust. The kind of door people forget until it matters.</div>
+  <p class="field-label">Occupants</p>
+  <p>1 bored guard.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>Smuggled apples from outside the city (farmland sympathy).</p>
+  <p class="field-label">Dialogue</p>
+  <div class="dialogue"><p>&ldquo;My cousin&rsquo;s farm got seized. I&rsquo;m here guarding nobles.&rdquo;</p></div>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 16.</p>
+</div>
+
+<!-- ── ROOM 16 ────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">16</span> Back Hall</h3>
+  <div class="read-aloud">Stone corridor, torchlit, quiet enough to hear your own breathing lie.</div>
+  <p class="field-label">Occupants</p>
+  <p>None stationed.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>Spare manacles; a broken wax seal with Varkus&rsquo; crest.</p>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 11, 15, 17.</p>
+</div>
+
+<!-- ── ROOM 17 ────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">17</span> Guard Post (Lower)</h3>
+  <div class="read-aloud">A desk, a lantern, and two men who look like they&rsquo;ve been told this corridor matters.</div>
+  <p class="field-label">Occupants</p>
+  <p>2 guards.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>A key tag marked &ldquo;20&rdquo; (teaser that keys exist even if they don&rsquo;t have them).</p>
+  <p class="field-label">Dialogue</p>
+  <div class="dialogue"><p>&ldquo;If the horn blows, we seal the stairs.&rdquo;</p></div>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 16, 18, locked to 20.</p>
+</div>
+
+<!-- ── ROOM 18 ────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">18</span> Lower Barracks / Watch Hall</h3>
+  <div class="read-aloud">Rougher bunks. Rougher men. The smell of wet wool.</div>
+  <p class="field-label">Occupants</p>
+  <p>2 guards.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>A wanted broadside: &ldquo;ap Dyksterhaus &mdash; sedition.&rdquo;</p>
+  <p class="field-label">Dialogue</p>
+  <div class="dialogue">
+    <p>&ldquo;He says taxes are tyranny. Then he spends merchant coin on speeches.&rdquo;</p>
+    <p>&ldquo;Ard Farkle&rsquo;s got messy. Civilians dead.&rdquo;</p>
+  </div>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 13, 17, 21.</p>
+</div>
+
+<!-- ── ROOM 19 ────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">19</span> Lower Corridor</h3>
+  <div class="read-aloud">The air grows colder and dirtier, as if the stone itself resents what it carries.</div>
+  <p class="field-label">Occupants</p>
+  <p>None.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>Burn marks on boots &mdash; Ard Farkle aftermath detail.</p>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 14 and 22.</p>
+</div>
+
+<!-- ── ROOM 20 ────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">20</span> Stairs Down <em>(Dungeon Access)</em></h3>
+  <div class="read-aloud">A spiral throat descending into torchlit gloom.</div>
+  <p class="field-label">Occupants</p>
+  <p>None at the door.</p>
+  <p class="field-label">Mechanics</p>
+  <p>Locked (Ring A) or DC 22 tools. One War Wizard and two jailers wait below.</p>
+  <p class="field-label">Exits</p>
+  <p class="exits">Down to dungeon (Shadowhigh, next session).</p>
+</div>
+
+<!-- ── ROOM 21 ────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">21</span> Guard Room</h3>
+  <div class="read-aloud">A table, ale, and men who joke too loudly to forget what they do.</div>
+  <p class="field-label">Occupants</p>
+  <p>3 guards.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>A half-written letter: &ldquo;To my sister &mdash; if the farms rise&hellip;&rdquo;</p>
+  <p class="field-label">Dialogue</p>
+  <div class="dialogue">
+    <p>&ldquo;Zanzibar would&rsquo;ve crushed this city in a week.&rdquo;</p>
+    <p>&ldquo;If Varkus succeeds, we&rsquo;re heroes. If he fails, we&rsquo;re occupiers.&rdquo;</p>
+  </div>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 18.</p>
+</div>
+
+<!-- ── ROOM 22 ────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">22</span> Trash / Escape Postern</h3>
+  <div class="read-aloud">Refuse pit and a narrow gate leading to the outside stink of the city.</div>
+  <p class="field-label">Occupants</p>
+  <p>2 guards rotate through.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>A scorched harness buckle (Ard Farkle horses).</p>
+  <p class="field-label">Dialogue</p>
+  <div class="dialogue"><p>&ldquo;If you run, run now. Equinox makes men brave.&rdquo;</p></div>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 19; to outside escape.</p>
+</div>
+
+<!-- ── ROOM 23 ────────────────────────── -->
+<div class="room">
+  <h3><span class="room-number">23</span> Inner Storage</h3>
+  <div class="read-aloud">Powder, rope, and crates stamped with imperial marks.</div>
+  <p class="field-label">Occupants</p>
+  <p>None.</p>
+  <p class="field-label">Treasure / Clues</p>
+  <p>Ballista bolts; powder keg; sealed invitation list for Tiffany House.</p>
+  <p class="field-label">Secrets</p>
+  <p>A loose stone (DC 15 Investigation) hides a note: <em>&ldquo;Old houses favor peace. Varkus favors power. Dyksterhaus favors coin.&rdquo;</em></p>
+  <p class="field-label">Exits</p>
+  <p class="exits">To 14.</p>
+</div>
+
+<hr class="heavy">
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- ENCOUNTER TOOLS                             -->
+<!-- ═══════════════════════════════════════════ -->
+
+<h2>Encounter Tools</h2>
+
+<h3>Patrols (Baseline)</h3>
+<ul>
+  <li><strong>Courtyard loop:</strong> 6 &rarr; 7 &rarr; 8 &rarr; 7 &rarr; 6 (every 10 minutes)</li>
+  <li><strong>Lower loop:</strong> 17 &rarr; 18 &rarr; 21 &rarr; 18 &rarr; 17 (every 12 minutes)</li>
+  <li><strong>Random check:</strong> every 15 minutes roll 1d6; on 1, a runner crosses 2 or 6.</li>
+</ul>
+
+<h3>Owlbear Chaos (Optional Lever)</h3>
+
+<p>If released, roll 1d6:</p>
+<table>
+<thead><tr><th style="width:3rem;text-align:right">d6</th><th>Result</th></tr></thead>
+<tbody>
+  <tr><td style="text-align:right">1&ndash;2</td><td>Attacks nearest creature.</td></tr>
+  <tr><td style="text-align:right">3&ndash;4</td><td>Flees toward courtyard.</td></tr>
+  <tr><td style="text-align:right">5&ndash;6</td><td>Mauls Purple Dragons first.</td></tr>
+</tbody>
+</table>
+
+<h3>Guard Personalities</h3>
+<p>The urban detachment has layers:</p>
+<ul>
+  <li><strong>The Loyalist.</strong> Believes in Zanzibar&rsquo;s legacy. Quotes history. Feels civil war brewing.</li>
+  <li><strong>The Cynic.</strong> Doesn&rsquo;t care who rules. Wants pay and survival.</li>
+  <li><strong>The Local Convert.</strong> Joined for steady coin. Worried about being seen as occupier.</li>
+  <li><strong>The Rural Conscriptee.</strong> Family affected by grain seizure. Conflicted loyalty.</li>
+</ul>
+
+<hr class="heavy">
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- STAT BLOCKS                                 -->
+<!-- ═══════════════════════════════════════════ -->
+
+<h2>Stat Blocks</h2>
+
+<!-- Purple Dragon Guard -->
+<div class="stat-block">
+  <p class="creature-name">Purple Dragon Guard</p>
+  <p class="creature-type">Medium humanoid (human), lawful neutral</p>
+  <hr class="stat-sep">
+  <p class="stat-line"><strong>Armor Class</strong> 16 (chain shirt, shield)</p>
+  <p class="stat-line"><strong>Hit Points</strong> 27 (5d8+5)</p>
+  <p class="stat-line"><strong>Speed</strong> 30 ft.</p>
+  <hr class="stat-sep">
+  <table class="ability-scores">
+    <thead><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr></thead>
+    <tbody><tr><td>14 (+2)</td><td>12 (+1)</td><td>12 (+1)</td><td>10 (+0)</td><td>11 (+0)</td><td>11 (+0)</td></tr></tbody>
+  </table>
+  <hr class="stat-sep">
+  <p class="stat-line"><strong>Skills</strong> Perception +2, Athletics +4</p>
+  <p class="stat-line"><strong>Senses</strong> passive Perception 12</p>
+  <p class="stat-line"><strong>Languages</strong> Common, Chondathan</p>
+  <p class="stat-line"><strong>Challenge</strong> 1/2 (100 XP)</p>
+  <hr class="stat-sep">
+  <p><span class="trait-name">Formation Discipline.</span> While within 5 ft. of an ally with a shield, the guard gains +1 AC.</p>
+  <p class="section-header">Actions</p>
+  <p><span class="trait-name">Spear.</span> <em>Melee or Ranged Weapon Attack:</em> +4 to hit, reach 5 ft. or range 20/60, one target. <em>Hit:</em> 6 (1d6+2) piercing.</p>
+  <p><span class="trait-name">Shield Bash (Recharge 5&ndash;6).</span> +4 to hit; <em>Hit:</em> 4 (1d4+2) bludgeoning and target must succeed on a DC 12 Str save or be knocked prone.</p>
+</div>
+
+<!-- Purple Dragon Elite -->
+<div class="stat-block">
+  <p class="creature-name">Purple Dragon Elite</p>
+  <p class="creature-type">Medium humanoid (human), lawful neutral</p>
+  <hr class="stat-sep">
+  <p class="stat-line"><strong>Armor Class</strong> 18 (half plate)</p>
+  <p class="stat-line"><strong>Hit Points</strong> 58 (9d8+18)</p>
+  <p class="stat-line"><strong>Speed</strong> 30 ft.</p>
+  <hr class="stat-sep">
+  <table class="ability-scores">
+    <thead><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr></thead>
+    <tbody><tr><td>16 (+3)</td><td>14 (+2)</td><td>14 (+2)</td><td>11 (+0)</td><td>12 (+1)</td><td>12 (+1)</td></tr></tbody>
+  </table>
+  <hr class="stat-sep">
+  <p class="stat-line"><strong>Saving Throws</strong> Str +6, Con +5</p>
+  <p class="stat-line"><strong>Skills</strong> Perception +4, Athletics +6, Intimidation +4</p>
+  <p class="stat-line"><strong>Senses</strong> passive Perception 14</p>
+  <p class="stat-line"><strong>Languages</strong> Common</p>
+  <p class="stat-line"><strong>Challenge</strong> 3 (700 XP)</p>
+  <hr class="stat-sep">
+  <p><span class="trait-name">Urban Tactics.</span> The elite has advantage on opportunity attacks.</p>
+  <p class="section-header">Actions</p>
+  <p><span class="trait-name">Multiattack.</span> Two longsword attacks.</p>
+  <p><span class="trait-name">Longsword.</span> <em>Melee Weapon Attack:</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 8 (1d8+4) slashing.</p>
+  <p><span class="trait-name">Net (1/Day).</span> <em>Ranged Weapon Attack:</em> +5 to hit, range 5/15. <em>Hit:</em> target is restrained (escape DC 13).</p>
+</div>
+
+<!-- War Wizard -->
+<div class="stat-block">
+  <p class="creature-name">War Wizard (Urban Protocol)</p>
+  <p class="creature-type">Medium humanoid (human), lawful neutral</p>
+  <hr class="stat-sep">
+  <p class="stat-line"><strong>Armor Class</strong> 13 (mage armor)</p>
+  <p class="stat-line"><strong>Hit Points</strong> 44 (8d8+8)</p>
+  <p class="stat-line"><strong>Speed</strong> 30 ft.</p>
+  <hr class="stat-sep">
+  <table class="ability-scores">
+    <thead><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr></thead>
+    <tbody><tr><td>9 (&minus;1)</td><td>14 (+2)</td><td>12 (+1)</td><td>16 (+3)</td><td>12 (+1)</td><td>11 (+0)</td></tr></tbody>
+  </table>
+  <hr class="stat-sep">
+  <p class="stat-line"><strong>Saving Throws</strong> Int +6, Wis +4</p>
+  <p class="stat-line"><strong>Skills</strong> Arcana +6, Investigation +6</p>
+  <p class="stat-line"><strong>Senses</strong> passive Perception 11</p>
+  <p class="stat-line"><strong>Languages</strong> Common, Draconic</p>
+  <p class="stat-line"><strong>Challenge</strong> 4 (1,100 XP)</p>
+  <hr class="stat-sep">
+  <p><span class="trait-name">Spellcasting.</span> The war wizard is a 6th-level spellcaster (Int; save DC 14, +6 to hit).</p>
+  <p>At will: <em>mage hand, message, minor illusion</em></p>
+  <p>3/day each: <em>shield, misty step, hold person</em></p>
+  <p>2/day each: <em>counterspell, web</em></p>
+  <p>1/day each: <em>arcane lock</em> (already on 12)</p>
+  <p class="section-header">Actions</p>
+  <p><span class="trait-name">Dagger.</span> +4 to hit; 4 (1d4+2) piercing.</p>
+</div>
+
+<!-- Colonel Angus -->
+<div class="stat-block">
+  <p class="creature-name">Colonel Angus</p>
+  <p class="creature-type">Medium humanoid (human), lawful neutral</p>
+  <hr class="stat-sep">
+  <p class="stat-line"><strong>Armor Class</strong> 19 (breastplate, defensive training)</p>
+  <p class="stat-line"><strong>Hit Points</strong> 110 (13d8+52)</p>
+  <p class="stat-line"><strong>Speed</strong> 30 ft.</p>
+  <hr class="stat-sep">
+  <table class="ability-scores">
+    <thead><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr></thead>
+    <tbody><tr><td>18 (+4)</td><td>16 (+3)</td><td>18 (+4)</td><td>12 (+1)</td><td>14 (+2)</td><td>13 (+1)</td></tr></tbody>
+  </table>
+  <hr class="stat-sep">
+  <p class="stat-line"><strong>Saving Throws</strong> Str +8, Dex +7, Con +8, Wis +6</p>
+  <p class="stat-line"><strong>Skills</strong> Athletics +8, Insight +6, Perception +6</p>
+  <p class="stat-line"><strong>Senses</strong> passive Perception 16</p>
+  <p class="stat-line"><strong>Languages</strong> Common</p>
+  <p class="stat-line"><strong>Challenge</strong> 7 (2,900 XP)</p>
+  <hr class="stat-sep">
+  <p><span class="trait-name">Perfect Soldier.</span> Angus has advantage on saving throws against being frightened or charmed.</p>
+  <p><span class="trait-name">Command Presence (1/Turn).</span> When an allied Purple Dragon within 30 ft. hits with an attack, Angus can add +3 damage.</p>
+  <p><span class="trait-name">Parry.</span> Angus adds +3 to AC against one melee attack that would hit him. Must see the attacker and be wielding a melee weapon.</p>
+  <p><span class="trait-name">Relentless (1/Day).</span> When reduced to 0 HP, Angus drops to 1 HP instead.</p>
+  <p class="section-header">Actions</p>
+  <p><span class="trait-name">Multiattack.</span> Angus makes three attacks (two saber, one pommel or pistol).</p>
+  <p><span class="trait-name">Saber.</span> <em>Melee Weapon Attack:</em> +8 to hit, reach 5 ft., one target. <em>Hit:</em> 9 (1d8+5) slashing.</p>
+  <p><span class="trait-name">Pommel Strike (Recharge 5&ndash;6).</span> <em>Melee Weapon Attack:</em> +8 to hit. <em>Hit:</em> 7 (1d6+4) bludgeoning, and target must succeed on a DC 15 Con save or be <strong>stunned</strong> until the end of its next turn.</p>
+  <p><span class="trait-name">Pistol (Urban Issue).</span> <em>Ranged Weapon Attack:</em> +7 to hit, range 30/90, one target. <em>Hit:</em> 9 (1d10+3) piercing. (Reload 2)</p>
+  <p class="section-header">Reactions</p>
+  <p><span class="trait-name">Cut the Line.</span> When a creature within 5 ft. of Angus moves away, Angus may make a Saber attack against it.</p>
+  <p class="section-header">Bonus Actions</p>
+  <p><span class="trait-name">Seal the Room.</span> Angus orders an ally to bar a door within 30 ft. (if physically possible).</p>
+</div>
+
+<hr class="heavy">
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- TREASURE & REWARDS                          -->
+<!-- ═══════════════════════════════════════════ -->
+
+<h2>Treasure &amp; Rewards</h2>
+
+<ul>
+  <li><strong>Lenore recovered:</strong> access to Long Rest Chamber (14).</li>
+  <li><strong>BattleBeast recovered:</strong> a dangerous ally freed.</li>
+  <li><strong>Ring A:</strong> keys enabling dungeon access next session.</li>
+  <li><strong>Evidence:</strong> Tiffany House donor list (23), grain seizure tallies (1/9/11), farmland letters (13/21), Varkus&rsquo; letter about Roe&rsquo;s abdication (11).</li>
+  <li><strong>Potions:</strong> 2 Potions of Healing (14).</li>
+  <li><strong>Coin:</strong> 65 gp total across the fort.</li>
+</ul>
+
+<hr class="heavy">
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- THE WESTERN VANGUARD                        -->
+<!-- ═══════════════════════════════════════════ -->
+
+<h2>The Western Vanguard</h2>
+
+<blockquote>
+  <p>The Western Vanguard is Cormyr&rsquo;s frontier army &mdash; half crusaders, half occupying force &mdash; renowned for its discipline and merciless efficiency.</p>
+</blockquote>
+
+<p>The banner bears the Purple Dragon of Cormyr rampant, armed in dexter foreclaw three arrows argent and sinister foreclaw three lightning bolts of the same; in dexter chief a sun in splendour crowned and charged with an escutcheon; in base a river fimbriated azure, the whole upon a field with sea to sinister and mountains proper with forests vert in dexter chief and base.</p>
+
+<p>The urban detachment garrisoned at Fort Maximillien is not the full Vanguard. These are the soldiers stationed inside a city that tolerates them the way a body tolerates a splinter &mdash; with inflammation, not acceptance.</p>
+
+<div class="descriptive">
+  <h4>The Violets</h4>
+  <p>An elite cavalry and mage detachment personally loyal to General Varkus. Known for violet-plumed helms and brutal precision, their floral name belies their ruthless reputation in battle. Their invasion of the Anauroch to secure a Netherese ruin from Orcish raiders was immortalized in Volothamp Geddarm&rsquo;s <em>Violets on the Dune</em>.</p>
+</div>
+
+<div class="descriptive">
+  <h4>The Sword Coast Trading Company</h4>
+  <p>Once the largest mercantile network in Faer&ucirc;n, dismantled by imperial decree after its founder&rsquo;s heretical dealings with Wainwright St. Cloud. Acquired and refitted by Revan Darkcember, a titled Lord of Cormyr and a Masked Lord of Waterdeep. Most say it survives in the Underdark and between the Planes. Those who know, know that the Company&rsquo;s main business is not simply in Faer&ucirc;n, but spread across the many planes and the Astral Sea itself.</p>
+</div>
+
+<hr class="heavy">
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- APPENDIX: DM QUICK-START                    -->
+<!-- ═══════════════════════════════════════════ -->
+
+<h2>Appendix: DM Quick-Start</h2>
+
+<ol>
+  <li>Start at <strong>(2) Parade Grounds</strong> with distant fort sounds.</li>
+  <li>Put one patrol in <strong>(7)</strong> and one in <strong>(6)</strong>.</li>
+  <li>Make <strong>(14) Infirmary</strong> the &ldquo;win condition&rdquo; of the night (safe long rest).</li>
+  <li>Make <strong>(11) Angus</strong> the danger: beatable, but likely avoided.</li>
+  <li>Angus moves between 11, 6, and 13 on a loose schedule &mdash; he can be isolated if timed right.</li>
+  <li>The medic in 14 does not want bloodshed. The cook in 10 resents the occupation. These are potential social levers.</li>
+</ol>
+
+<div class="note">
+  <h4>Design Intent</h4>
+  <p>Shortcuts are hard (high DC). Long routes are safer. Failure escalates locally; only the horn in (11) escalates globally. The fort is not a dungeon of monsters. It is a disciplined garrison. It is a pressure chamber.</p>
+  <p>Shadowhigh hangs at dawn.</p>
+</div>
+
+</div><!-- .content -->
+
+<div class="page-footer">
+  Fort Maximillien &bull; War of the Five Zanzibars &bull; A Stealth Prison-Break in Occupied Waterdeep
+</div>
+
+</div><!-- .page-container -->
+</body>
+</html>

@@ -1,0 +1,2562 @@
+I want to see if you can interpret my personal dungeon design notation. This is a schema of Fort Maximillien, a castle and guard post in Waterdeep controlled by the occupying purple dragons. My notation uses circles with x to denote a potentially hostile enemy, circles with letters to denote character locations, a downward triangle to show treasure, an S to show secret doo, a lock for locked doors a circle for non hostile creatures, and lines between rooms to show access. If you can read my handwriting, please re draw this schema and describe the rooms, or ask me questions to lad us there, then we’ll mock up a map.
+
+Yes. I can read most of this. Your notation is consistent and actually quite clean once decoded.
+
+Here’s my reconstruction of Fort Maximillien as a structured schema.
+
+Legend (as interpreted)
+
+⊗ = Hostile enemy
+
+○ = Non-hostile creature
+
+Crowned ⊗ = Colonel Angus
+
+△ (down triangle) = Treasure
+
+S = Secret door
+
+🔒 = Locked door
+
+in circle = Long rest chamber
+
+Key symbol = Key to stairs (dungeon access)
+
+Lines = Access corridors
+
+Spiral circle = Stairs (up or down indicated)
+
+Structural Overview
+
+The fort is roughly a layered guard installation with:
+
+Outer Gate → Parade Ground → Courtyard hub
+
+Barracks / Stables cluster on west
+
+Command / Dispatch / Infirmary cluster east
+
+Basement access through stair cores (12 up, 20 down)
+
+Dungeon off 20
+
+Trash escape (22 → exterior arrow)
+
+It reads like a fortified garrison with internal choke control.
+
+Room Index Reconstruction
+1 – Gate
+
+Front entry structure.
+Connected to:
+
+2 (Parade Grounds)
+
+5 (Stables/Animal Pens) — locked access
+
+Likely heavy doors.
+
+2 – Parade Grounds
+
+Large open rectangle.
+Feeds into:
+
+6 Courtyard (main hub)
+
+5 – Stables / Animal Pens
+
+Contains:
+
+BB (possibly Battle Beast?)
+
+1 non-hostile
+
+3 hostiles
+
+Secret door to 10
+
+This looks like a lightly guarded but bypassable area.
+
+6 – Courtyard (Inner)
+
+3 non-hostiles stationed here.
+Central circulation space.
+
+Connects to:
+
+7 (Hallway)
+
+11 (below via access)
+
+7 – Interior Hall
+
+1 hostile.
+
+Feeds into:
+
+8 (Transition corridor)
+
+12 (Stairs Up)
+
+8 – Corridor / Guard Post
+
+Feeds to 9 and 14.
+
+9 – Dispatch
+
+2 hostiles inside.
+Locked access to 14 (Infirmary).
+
+10 – Kitchen & Supplies
+
+2 hostiles.
+Treasure present.
+Secret door back to 5.
+
+11 – Barracks (Command)
+
+Multiple hostiles.
+Colonel Angus present here.
+Likely officer quarters / ready room.
+
+Locked access to:
+
+16
+
+12 – Stairs Up (Spiral)
+
+Marked “Gen. Areas ↑”
+Likely access to upper tower / battlements.
+
+13 – Barracks (General)
+
+Heavy hostile presence (6+).
+Treasure present.
+
+Connects down to 18.
+
+14 – Infirmary
+
+Long Rest chamber inside
+
+1 non-hostile
+
+Treasure
+Locked access south to 19
+
+15 – Side Gate House
+
+1 non-hostile.
+Locked connection to 16.
+
+Secondary access to fort.
+
+16 – Back Hall
+
+Locked connections.
+Transit corridor linking west and east lower fort.
+
+17 – Guard Room
+
+2 hostiles.
+Locked access to 20 (stairs down).
+
+18 – Watch Hall
+
+2 hostiles.
+
+19 – Lower Corridor
+
+Feeds to:
+
+22 (Trash Escape)
+
+Locked door above from 14.
+
+20 – Stairs Down (Spiral)
+
+Leads to Dungeon.
+Locked.
+
+21 – Guard Room (Lower)
+
+3 hostiles.
+
+22 – Trash / Escape
+
+2 hostiles.
+Arrow indicates exterior exit.
+
+23 – “Innr 2” (Inner 2?)
+
+2 non-hostiles + treasure.
+
+This feels like hidden inner chamber or storage.
+
+Flow Logic (How This Plays)
+Main Assault Path
+
+1 → 2 → 6 → 7 → 8 → 9 → 14 → 19 → 22 (escape)
+
+Stealth Route
+
+1 → 5 → Secret → 10 → 11 → 12 (up)
+OR
+15 → 16 → 17 → 20 (dungeon)
+
+Command Kill Route
+
+Reach 11 to eliminate Colonel Angus.
+
+Dungeon Route
+
+20 → dungeon (off-map)
+
+What I Need Clarified
+
+Is 11 definitely the command chamber with Colonel Angus?
+
+Is 12 going to battlements or tower top?
+
+Is 23 a secret treasury?
+
+Does 6 (courtyard) have verticality (balconies)?
+
+Is 15 meant as infiltration entry?
+
+Are Purple Dragons occupying this as an enemy force in Waterdeep (which is unusual politically — is this an alternate timeline)?
+
+If you confirm the above, I’ll:
+
+Clean redraw this as a tactical dungeon schema (cleaned node map)
+
+Then generate a proper top-down battle map layout
+
+Then optionally generate a cinematic illustration of Fort Maximillien exterior
+
+Your notation is excellent. This is a very playable garrison design.
+
+You’ve got it all. Gen Qtrs are upstairs, so battlements, artillery (its n occupying force so they are ready for rebellion) and the generals quarters are up the stairs, need key. Down stairs is the dungeon where Shadowhigh is in irons waiting for hanging (not in this session). BattleBeast is captured and in the pens with a non-hostile but still deadly creature, both waiting execution by the guards. Lenore is in the locked infirmary room. I love the long rest being a chamber and not a charm, keep that. The 7-8-9 is meant to be a sort of arcade but behind the castle walls, semi outside but treated like a hall like you did. Angus is in 11 and has the keys. He is very deadly, the party is very injured already so this will be a high stakes stealth prism break in all likelihood 
+
+Good. This is a lethal stealth extraction map. The tension works.
+
+I’ll restate the final interpreted structure cleanly with narrative logic baked in.
+
+FORT MAXIMILLIEN
+
+Purple Dragon Occupation Garrison
+
+Strategic Identity
+
+Designed to suppress rebellion.
+
+Keys centralized on Colonel Angus.
+
+Vertical command control (Generals above, dungeon below).
+
+Public punishment staging (pens → dungeon → hanging).
+
+Semi-open arcade (7–8–9) allows patrol flow but feels exposed.
+
+This is not a “dungeon.”
+It’s a military machine.
+
+STRUCTURAL REDRAW (Clean Schema)
+[1 Gate] ── [2 Parade] ── [6 Courtyard]
+     │                         │
+     │                         └── [7 Arcade Hall] ── [8 Arcade] ── [9 Dispatch]
+     │                                                │               │
+     │                                                │               🔒
+     │                                                │               │
+     │                                                │            [14 Infirmary 🔒]
+     │                                                │                 │
+     │                                                │                 🔒
+     │                                                │                 │
+[5 Pens 🔒] ── S ── [10 Kitchen] ── [11 Command (Angus + Keys)]
+     │                             │
+     │                             🔒
+     │                             │
+     │                          [16 Back Hall]
+     │                             │
+     │                             🔒
+     │                             │
+     │                         [17 Guard Post]
+     │                             │
+     │                             🔒
+     │                             │
+     │                         [20 Stairs ↓ Dungeon]
+     │
+     │
+[15 Side Gate] ──🔒── [16]
+
+From 6 Courtyard:
+      │
+      └── [12 Stairs ↑ Generals / Artillery]
+
+From 11:
+      │
+      └── [13 Barracks]
+              │
+              └── [18 Guard Hall]
+                      │
+                      └── [21 Lower Guard]
+                              │
+                              └── [22 Trash Escape → Outside]
+
+[23 Inner Storage] connects east of 14
+ROOM STATES (WITH HOSTAGE PLACEMENT)
+5 – Pens
+
+BattleBeast in irons.
+
+One non-hostile but extremely dangerous creature.
+
+Guards present.
+
+Secret route to 10.
+
+This is a volatile room.
+If chaos breaks out here, everything goes loud.
+
+10 – Kitchen
+
+Supplies.
+
+Treasure.
+
+Low morale guards.
+
+Best stealth pivot node.
+
+11 – Command (Angus)
+
+Colonel Angus.
+
+Multiple elites.
+
+Keys to:
+
+12 (upstairs)
+
+20 (dungeon)
+
+14 (infirmary)
+
+Possibly 16 chain locks
+
+This is the keystone chamber.
+Everything funnels through here if the party wants total access.
+
+12 – Generals’ Quarters (Upstairs)
+
+Artillery.
+
+Battlements.
+
+Command balcony overlooking courtyard.
+
+Heavily guarded but likely slower patrols.
+
+This is where alarm escalation begins.
+
+14 – Infirmary
+
+Lenore locked inside.
+
+Long Rest Chamber present.
+
+Minimal guard if Dispatch (9) unaware.
+
+Important:
+If they reach 14 quietly, they can stabilize before the final push.
+
+20 – Dungeon (Down)
+
+Shadowhigh awaiting execution.
+
+Guarded.
+
+Hard lock.
+
+Not tonight’s objective — but looming.
+
+STEALTH BREAK OPTIONS
+Best Stealth Route (Low Combat)
+
+1 → 5 (rescue BattleBeast quietly?)
+Secret → 10
+→ 11 (assassinate Angus for keys)
+→ 14 (Lenore + long rest)
+→ 16 → 17 → 20 (prep future dungeon break)
+
+High risk: Angus is lethal.
+
+Safer Split Objective
+
+Team A:
+1 → 5 → Secret → 10 → 11 (key acquisition)
+
+Team B:
+1 → 2 → 6 → 7 → 8 → 9 (neutralize dispatch to prevent alarm)
+
+This keeps fort in dark.
+
+Emergency Escape Route
+
+13 → 18 → 21 → 22 → Trash Exit
+
+That exit arrow is perfect as a panic lever.
+
+Mechanical Observations
+
+Angus is your single point of failure.
+
+Long Rest chamber being physical is brilliant — it makes logistics tactical.
+
+Arcade (7–8–9) is your noise amplifier zone.
+
+Courtyard (6) is sniper/artillery vulnerable if alarm sounds.
+
+Pens (5) are chaos grenade.
+
+Clarifying One Thing
+
+Does 13 represent common barracks or elite guard barracks?
+The density suggests a high concentration.
+
+Next Step
+
+I can now:
+
+Convert this into a clean, readable node-map diagram.
+
+Then design a tactical 5e battle map layout with scale and dimensions.
+
+Or create a cinematic exterior illustration of the fort under occupation.
+
+Or help you stat Colonel Angus for a near-TPK stealth boss.
+
+This is a very strong prison break setup.
+Tension is baked into architecture.
+
+I want to be sure there are multiple routes through and fails ages if they make mistakes (not one failed roll leads to tpk) keys on angus but maybe he moves around so he can be isolated, also have to show them where the keys are somehow. Want plenty to discover while they’re sneaking, personalities for the guards and rooms, things to find that fill out the story. Want difficulties for locks that funnel them to longer paths, short cuts much harder
+
+Good. You don’t want a stealth puzzle. You want a pressure system.
+
+Let’s turn Fort Maximillien into a living occupation machine with:
+
+• Multiple routes
+• Escalation states
+• Discoverable keys
+• Guard personalities
+• Lock difficulty tiers
+• Soft failures instead of TPK
+
+STRUCTURE AS A SYSTEM (
+Adding more notes about what we’re making before you output. Also want stats for colonel angus and guards, want room descriptions for all rooms, want eventual overhead and exterior maps
+
+Good. Don’t output anything yet — let’s lock design intent before I generate the full packet.
+
+You’re building:
+
+A stealth prison break
+
+Against a professional occupying force
+
+With injured PCs
+
+In a politically tense Waterdeep
+
+With vertical escalation (battlements + dungeon)
+
+And a future arc (Shadowhigh hanging)
+
+Before I generate:
+
+• Full room descriptions
+• Patrol logic
+• Lock DCs
+• Fail-state ladder
+• Colonel Angus stat block
+• Purple Dragon variants
+• Overhead tactical map
+• Exterior siege illustration
+
+I need to nail a few structural decisions so the mechanics don’t undermine your tone.
+
+1. What Tier Is the Party?
+
+Approx level?
+How many PCs?
+How injured are they right now (spell slots, HP, exhaustion)?
+
+Angus being “very deadly” means different things at level 4 vs level 9.
+
+2. Tone of Angus
+
+Pick one:
+
+A) Cold military professional (disciplined duelist)
+B) Brutal sadist (executes publicly)
+C) Politically ambitious officer (calculating)
+D) Religious zealot of Cormyr
+E) Something else
+
+This affects:
+
+His stat design
+
+His movement patterns
+
+Where keys are displayed
+
+How isolatable he is
+
+3. Alert Model
+
+How do you want escalation to work?
+
+Option A – Heat Track (0–5 alert stages)
+Option B – Individual Room Alerts (localized)
+Option C – Timed Patrol Rotation
+Option D – Magical alarm network
+Option E – Mixed
+
+Given your map, I’d recommend Mixed:
+
+Dispatch (9) controls signal horn
+
+Courtyard (6) runners spread alarm
+
+Battlements (12) signal flare escalation
+
+4. Keys Visibility
+
+Do you want:
+
+Keys visible on belt?
+
+Keys hanging on wall in 11?
+
+Ring around Angus’ neck?
+
+Divided key system (two rings)?
+
+If keys are visible early, players plan.
+If hidden, they must discover via overheard talk or paperwork.
+
+5. Execution Timeline
+
+Is Shadowhigh’s hanging:
+
+Tomorrow morning?
+
+At dawn?
+
+At sunset?
+
+Already announced publicly?
+
+This changes urgency and NPC chatter.
+
+6. BattleBeast’s Companion
+
+The “non-hostile but deadly creature” in pens —
+What is it?
+
+A) Displacer Beast
+B) Owlbear
+C) Hellhound
+D) Something custom
+E) Another PC-aligned creature
+
+That creature can become:
+
+Chaos engine
+
+Stealth liability
+
+Ally
+
+Moral problem
+
+7. Do You Want Angus to Be Killable Tonight?
+
+Important.
+
+If yes:
+He must be strong but beatable with stealth advantage.
+
+If no:
+He must be designed as a tactical boss who retreats to 12.
+
+8. Purple Dragon Force Type
+
+Are these:
+
+Standard Cormyrean Purple Dragons?
+
+Elite occupying regiment?
+
+Corrupt splinter unit?
+
+Supported by War Wizards?
+
+Magic presence changes lock DCs and alarm types.
+
+What I Will Deliver After You Answer
+
+Once these are set, I’ll generate:
+
+1. Complete Room Descriptions (All 23)
+
+Sensory detail
+
+Guard personalities
+
+Clues
+
+Discoverables
+
+Social leverage hooks
+
+2. Patrol & Escalation System
+
+Multiple routes
+
+Failure ladder (no single roll doom)
+
+Noise vs suspicion mechanics
+
+Optional time pressure
+
+3. Lock & Shortcut DC Table
+
+Easy path = longer
+
+Hard path = short and dangerous
+
+4. Colonel Angus Stat Block
+
+Legendary-lite if needed
+
+Duelist style
+
+Key mechanics
+
+Tactical brain
+
+5. Guard Stat Variants
+
+Regular
+
+Sergeant
+
+Elite
+
+Dispatch operator
+
+Infirmary medic
+
+6. Pens Creature Stat Block
+7. Clean Overhead Tactical Map (Grid Ready)
+8. Exterior Occupied Fort Illustration Description
+
+Artillery placements
+
+Purple Dragon banners
+
+Guard rotations
+
+Gallows under construction?
+
+This is shaping into a very strong stealth arc.
+
+Answer the 8 questions and I’ll build the whole war machine.
+
+Barely Tier 2 most level 5. 2 PCs are free (and walened) BB and Lenore are captured and very weak. Lenore will be able to long rest as will the others if they make it to infirmary. Maverick is upstairs with the general being interrogated (next session) shadow high below awaiting hanging (next session) they have just gone all out in multiple Fights but will have short rested, end of adventuring day. Angus is A, the perfect soldier. 11 is dispatch and controlls alarm. I want localized alarm for the most part to limit tpk. Keys on wall probably, two rings maybe, shadow hung tomorrow unless they can talk general into a trial. Owlbear is funny bc BB lost a fight to one in the first session. Now it may join them if they free it. He can be killed but probably not, he’s a mini boss for the campaign. Cormyrean purple dragons but the urban detachment. The war wizards are mostly upstairs, there may be one or two down here and one in the dungeon. 
+
+Perfect. This is now structurally coherent.
+
+You’ve built:
+
+A wounded Tier-2 party
+
+Two PCs free
+
+Two PCs imprisoned
+
+One upstairs under interrogation
+
+One downstairs awaiting execution
+
+End of adventuring day
+
+Localized alarms
+
+Professional soldiery
+
+Limited war wizard presence
+
+A mini-boss who should survive unless played brilliantly
+
+This is excellent tension geometry.
+
+I’m going to lay down the final structural system before generating stats/maps in the next output.
+
+CORE DESIGN PRINCIPLES FOR FORT MAXIMILLIEN
+1. No Single Roll = TPK
+
+Instead we use:
+
+Suspicion Ladder (Per Zone)
+
+Each zone tracks its own alert:
+
+0 – Normal
+1 – Suspicious (double patrols)
+2 – Active search in that zone
+3 – Locked down (doors sealed, runners dispatched)
+
+Dispatch (11) can escalate the whole fort — but only if reached.
+
+This keeps mistakes survivable.
+
+KEY SYSTEM
+
+Two Rings.
+
+Ring A (Wall in 11):
+
+Infirmary (14)
+
+Dungeon (20)
+
+Armory (if you add one)
+
+Back Hall (16)
+
+Ring B (On Angus):
+
+Stairs Up (12)
+
+Dispatch Alarm Cabinet
+
+General’s chambers
+
+Keys are visible:
+
+Ring A hanging on a pegboard behind desk.
+
+Ring B clipped to Angus’ sword belt.
+
+Now players must decide:
+Steal keys?
+Kill Angus?
+Or find alternate route?
+
+MULTIPLE ROUTES DESIGN
+Rescue Lenore First Route (Lower Risk)
+
+1 → 5 → Secret → 10 → 11 (steal Ring A quietly)
+→ 14 (Long Rest)
+
+This gives them recovery before major decisions.
+
+If they avoid Angus, they don’t need to fight him yet.
+
+Free BB + Owlbear Chaos Route
+
+Free Owlbear.
+Release it into courtyard.
+Use chaos to isolate Angus.
+
+This is noisy but survivable because:
+Alarm localizes first.
+
+Dungeon Shortcut (Hard)
+
+17 → 20 requires:
+
+Ring A
+
+Or DC 22 thieves tools
+
+Or brute force (auto zone alert)
+
+Upper Route (Hardest)
+
+12 requires Ring B or DC 23 lock + Arcane Lock dispel.
+
+LOCK DIFFICULTY TABLE
+
+Easy but Long Paths:
+
+Most outer doors DC 13–15
+
+Mid:
+
+Back Hall DC 17
+
+Dispatch DC 18
+
+Hard:
+
+Dungeon DC 22
+
+Stairs Up DC 23
+
+Alarm Cabinet DC 21
+
+Secret Door 5→10: DC 14 Perception
+
+This funnels:
+Stealthy players take longer routes.
+Bold players gamble on high DC shortcuts.
+
+ZONE PERSONALITY
+
+Let’s give this fort life.
+
+1 – Gate
+
+Two bored soldiers.
+One hates Waterdeep.
+One is from Cormyr and proud.
+
+They complain about the smell of the city.
+
+5 – Pens
+
+BattleBeast chained.
+Owlbear sedated but not fully.
+
+Guard personality:
+Young recruit terrified of the Owlbear.
+Veteran who thinks executing beasts is dishonorable.
+
+Clue:
+Execution order nailed to wall.
+Shadowhigh scheduled tomorrow at dawn.
+
+10 – Kitchen
+
+Cook resentful of occupation.
+Might quietly help with information.
+
+There’s a crate marked:
+“War Wizard – Special Restraints”
+
+Foreshadowing dungeon.
+
+11 – Dispatch / Command
+
+Angus reviewing patrol schedule.
+Pegboard of keys.
+Map of Waterdeep districts.
+Alarm horn mechanism.
+
+Two elite guards.
+
+If Angus leaves, this room is vulnerable.
+
+14 – Infirmary
+
+Lenore weak but conscious.
+One medic.
+Long Rest Chamber:
+A consecrated ward room with faint abjuration glyphs.
+Used for officer recovery.
+
+This is your mechanical reset.
+
+12 – Upstairs (Generals / War Wizards)
+
+Artillery overlooking courtyard.
+Arcane signal lantern.
+Maverick being interrogated.
+General more political than Angus.
+
+War Wizard here.
+
+20 – Dungeon
+
+Shadowhigh in irons.
+One War Wizard.
+Two jailers.
+Gallows frame outside in courtyard half-built.
+
+COLONEL ANGUS – DESIGN INTENT
+
+Level 8–9 CR equivalent.
+Elite martial.
+No magic.
+Perfect soldier.
+Battlefield control duelist.
+
+He should:
+
+Fight intelligently.
+
+Target weak PCs.
+
+Withdraw if outmatched.
+
+Never fight alone if avoidable.
+
+He is not a brute.
+He is precision.
+
+I will stat him next message.
+
+PURPLE DRAGON URBAN DETACHMENT
+
+Regular Guard (CR 1/2 variant)
+Sergeant (CR 2)
+Elite (CR 3)
+War Wizard (CR 4–5)
+
+No overwhelming numbers in one place.
+Density in barracks (13).
+
+FAIL STATE DESIGN
+
+If they mess up:
+
+Zone goes Alert 1.
+Doors lock.
+Extra patrol appears.
+
+If they mess up again:
+Zone goes Alert 2.
+Runners attempt to reach 11.
+
+If they stop runners:
+Alarm doesn’t spread.
+
+Only if Dispatch alarm is sounded does full lockdown occur.
+
+Even then:
+Angus rallies troops instead of instant TPK.
+
+OWLBEAR
+
+This is brilliant symmetry.
+
+Make it:
+Injured.
+Chained.
+Angry at BB but recognizes him.
+
+If freed:
+Roll reaction:
+1–2 attacks everyone
+3–4 flees
+5–6 fights Purple Dragons
+
+Chaotic but survivable.
+
+NEXT OUTPUT
+
+I will now generate:
+
+Full stat blocks (Angus, guards, War Wizard)
+
+Room-by-room descriptions (all 23)
+
+Patrol rotation schedule
+
+Escalation mechanics
+
+Mechanical owl bear stat
+
+Clean tactical overhead map layout (grid scale)
+
+Exterior fort design notes
+
+Unless you want to adjust tone further.
+
+This is a very strong arc.
+
+This is great. Some points on the story - General Varkus is the imperial governor of the city and is planning a rebellion against the lame duck empire roe using his frontier outpost in Waterdeep as a base, but the locals don’t like him and his troops very much. His rivals in town follow the unmasked lord ap dyksterhaus who want independence. There was an attempted but foiled heist at Tiffany house where varkus was tonight (the party were involved in foiling it) and a fight and deaths at Ard farkle’s) they were also involved) Write dialogue thatsbgermaine to our story. This isn’t the same owl bear as fought bb last time sorry. Remember they should not really be able to access the stairs this session. If we have to those can be locked from the inside? Idk
+
+Excellent. This gives the fort political gravity.
+
+You’re not running a prison break.
+You’re running a rebellion incubator.
+
+Let’s integrate:
+
+General Varkus = Imperial Governor, quietly preparing rebellion
+
+Unmasked Lord ap Dyksterhaus = Independence faction
+
+Tiffany House heist attempt (foiled by party)
+
+Bloodshed at Ard Farkle’s
+
+Local resentment
+
+Stairs functionally inaccessible this session
+
+And yes — we lock the upstairs from the inside. Cleanly.
+
+STAIRS ACCESS SOLUTION (Clean + Logical)
+
+12 – Stairs Up
+
+Heavy oak door reinforced in iron.
+
+Locked from the inside at the top.
+
+Requires Ring B from Angus.
+
+Even with Ring B, there is a bar mechanism that must be lifted from above.
+
+War Wizard upstairs maintains Arcane Lock nightly.
+
+So:
+
+They cannot access upstairs this session unless:
+
+They kill Angus
+
+AND breach Arcane Lock
+
+AND deal with interior bar
+
+Which makes it clearly “next session content.”
+
+No awkward railroading.
+
+POLITICAL ATMOSPHERE INSIDE THE FORT
+
+The troops are not unified.
+
+Urban Purple Dragons = frontier posting.
+Morale is mixed.
+
+Some dialogue seeds:
+
+1 – Gate Guards (Low Alert)
+
+“You hear about Tiffany House? Nobles can’t even protect their own silver.”
+
+“Wasn’t the Governor there tonight?”
+
+“Aye. And now half the city thinks he staged it.”
+
+5 – Pens (Guard banter)
+
+Young recruit:
+
+“I don’t like this. Beasts are beasts. Hang a man if you must, but chaining them like this…”
+
+Veteran:
+
+“Governor wants spectacle. Fear is cleaner than loyalty.”
+
+BattleBeast overhears:
+
+“The lion-man’s to be displayed in the square at second bell.”
+
+Execution rumor seeds.
+
+10 – Kitchen (Cook whispering)
+
+Cook mutters:
+
+“Empire’s a lame duck, and Varkus knows it. Why d’you think he brought artillery into Waterdeep? This isn’t a frontier fort.”
+
+If pressed:
+
+“There are letters. War Wizards carrying them. Sealed in violet wax.”
+
+11 – Dispatch (When Angus Present)
+
+Angus to subordinates:
+
+“No raised voices. No running feet. The city watches. We do not look rattled.”
+
+“If Varkus means to carve a throne here, it will not be with panicked men.”
+
+He is not cruel.
+He is controlled.
+
+If the party overhears:
+
+“The Unmasked Lord thinks this city can stand alone. Let him try. When the Empire falls, someone must rule what remains.”
+
+Barracks (13) chatter
+
+“Ard Farkle’s burned half the Dock Ward in a night. And we’re blamed.”
+
+“They say ap Dyksterhaus funds the unrest.”
+
+“If rebellion comes, I’d rather be inside these walls than outside them.”
+
+Infirmary (14)
+
+Medic, low voice:
+
+“We were meant to keep peace. Now we prepare gallows.”
+
+To Lenore:
+
+“You’re not like the others. That’s your curse.”
+
+Dungeon (20 – for next session seed)
+
+Jailer muttering:
+
+“Shadowhigh, was it? Fancy name. You’ll swing same as the rest.”
+
+War Wizard:
+
+“She won’t. The Governor hasn’t decided yet.”
+
+Foreshadowing trial leverage.
+
+GENERAL VARKUS – OFFSCREEN DIALOGUE
+
+Upstairs interrogation of Maverick (heard faintly through floor if players linger):
+
+“You meddled at Tiffany House. You thwarted a theft that would have discredited me.”
+
+“Do you think Waterdeep thanks you for it?”
+
+“The Empire rots. Someone must inherit the bones.”
+
+He is ambitious, not insane.
+
+ANGUS – PERSONALITY THROUGH SPEECH
+
+He never shouts.
+
+If confronted mid-stealth:
+
+“Weapons down. You have made a series of poor calculations.”
+
+If wounded:
+
+“Good. You are competent. I had hoped so.”
+
+If losing:
+
+“Retreat. Regroup. Seal the courtyard.”
+
+He survives by discipline.
+
+MULTIPLE FAILURE STATES (No TPK)
+
+Pens break loud → Courtyard Alert only.
+
+Kitchen fight → Barracks alerted but not whole fort.
+
+Dispatch fight → Risk of full alarm.
+
+Killing guards silently keeps zones isolated.
+
+Angus does not rush blindly.
+He consolidates.
+
+DISCOVERABLE STORY CLUES
+
+Inside 11 (Dispatch):
+
+Map of Dock Ward with marked warehouses.
+
+Shipment ledger: “Powder. Ballista heads. Reinforced timbers.”
+
+Letter fragment sealed violet:
+
+“When Roe abdicates, the frontier must already be secured.”
+
+Inside 10:
+
+Ration disparity (officers eat well, troops do not).
+
+Cook’s resentment.
+
+Inside 13:
+
+Gambling debts.
+
+Some soldiers unsure about rebellion.
+
+Inside 14:
+
+Officer wounded in Tiffany House scuffle.
+
+“The Governor should not have been there.”
+
+This reinforces conspiracy.
+
+ABOUT THE OWLBEAR
+
+Since it’s not the same one:
+
+Make this one:
+
+Younger.
+
+Captured from High Forest.
+
+Sedated but restless.
+
+If freed:
+
+It does not join permanently.
+It causes chaos and escapes.
+
+This gives you:
+Noise without permanent NPC complication.
+
+PLAYER AGENCY LEVERS
+
+They can:
+
+Steal Ring A only.
+
+Avoid Angus entirely.
+
+Create chaos with Owlbear.
+
+Bargain with medic.
+
+Frame ap Dyksterhaus.
+
+Gather evidence of rebellion.
+
+Prepare for next session dungeon break.
+
+FINAL STRUCTURAL CHECK
+
+Upstairs:
+Locked from inside + Arcane Lock.
+Clearly out-of-scope tonight.
+
+Dungeon:
+Accessible if they get Ring A.
+Hard, but possible.
+
+Infirmary:
+Your mechanical reset anchor.
+
+Everything else:
+Playable stealth web.
+
+Next I can generate:
+
+Colonel Angus stat block (balanced for 5th level wounded party).
+
+Urban Purple Dragon stat variants.
+
+War Wizard stat.
+
+Finalized room-by-room mechanical breakdown with DCs and stealth cues.
+
+Overhead tactical map layout.
+
+Exterior occupied-fort description with gallows.
+
+Tell me what you want first.
+
+Great stuff but let’s revise. The primary rumors: Dyksterhaus openly flauts the emporer’s customs and is open about overtaxation of merchants (his political base in Waterdeep) varkus desires a strong and multinational empire with a military core, like the Zanzibars of old (Zanzibar is this worlds Caesar) Varkus was at Tiffany house to raise funds and make friends among the social elite of the city, who have old money and ancient magics and trades and consider themselves above the merchant class, they like imperial peace and access. Varkus socializing with the city’s rich is a new development. There are revolts to imperial siezure of grain and cattle in the farmlands far outside the city. The fight at ard farkles included shootings of bystanders by the convict in the dungeons. A cart or two was burned and horses died too. Inn is ok. Vernal equinox is coming, not enough elf girls at the parties any more ….
+
+Good. This sharpens the ideological conflict. Now the fort isn’t just an occupation post — it’s the hinge of a coming civil fracture.
+
+We’ll revise the rumor ecosystem and dialogue so it reflects:
+
+Dyksterhaus = populist merchant advocate, anti-overtaxation, flaunts imperial customs.
+
+Varkus = imperial reformist, multinational strength, military cohesion, invokes Zanzibar (Caesarian archetype).
+
+Tiffany House = elite old-money gathering.
+
+Rural unrest over grain & cattle seizure.
+
+Ard Farkle’s shooting fallout.
+
+Vernal equinox approaching.
+
+Cultural tension (old magic vs merchant coin vs imperial steel).
+
+No cartoon villainy. All sides rational.
+
+RUMOR NETWORK (Layered & Believable)
+Street-Level (Guards, Kitchen, Barracks)
+
+“Dyksterhaus says the Emperor bleeds merchants dry while nobles dine on imported figs.”
+
+“Farmers outside the walls are burning tax tallies. Grain levies doubled.”
+
+“Zanzibar brought unity. Varkus wants that again. Discipline. Borders. Law.”
+
+“Law doesn’t shoot dockhands in taverns.”
+
+(Reference to Ard Farkle’s incident.)
+
+Officer-Level (Dispatch / Command)
+
+“The Governor was at Tiffany House cultivating continuity. Old families understand stability.”
+
+“Merchants want autonomy. Nobles want continuity. Varkus wants an empire.”
+
+“The Emperor is aging. Everyone smells succession.”
+
+Elite-Level (Upstairs, overheard)
+
+General Varkus:
+
+“Dyksterhaus courts the merchants because coin moves faster than steel. But steel holds when coin flees.”
+
+“Zanzibar did not ask permission to unify. He imposed unity.”
+
+“Peace is not the absence of force. It is the presence of credible force.”
+
+This positions Varkus as ideological, not tyrannical.
+
+TIFFANY HOUSE CONTEXT
+
+Guards whisper:
+
+“The Governor hasn’t visited those houses in years. Tonight he dined.”
+
+“Old money. Ancient magic. Families that predate the Empire.”
+
+“They don’t like merchants. They like stability.”
+
+This signals a coalition shift.
+
+ARD FARKLE AFTERMATH
+
+Barracks conversation:
+
+“The convict in the dungeon started firing into the street.”
+
+“Two bystanders dead. Horses burned in their traces.”
+
+“And now they blame us.”
+
+This raises tension without making the Dragons cartoonish.
+
+FARMLAND REVOLT
+
+Kitchen gossip:
+
+“Cattle seized for the garrison. Farmers won’t survive winter if levies hold.”
+
+“Vernal equinox’s near. Bad time for unrest.”
+
+CULTURAL NOTES (Vernal Equinox + Social Tone)
+
+Officer mutter:
+
+“Not enough elf girls at the parties anymore. The old houses keep their daughters home.”
+
+“Equinox used to be celebration. Now it’s surveillance.”
+
+That line tells players:
+The city’s social harmony is thinning.
+
+ANGUS — IDEOLOGICAL DIALOGUE REVISION
+
+He is disciplined, not blind.
+
+If confronted verbally:
+
+“Dyksterhaus promises freedom. Freedom from what? Grain levies? Border defense? Naval patrols?”
+
+“You mistake discomfort for oppression.”
+
+If accused of overreach:
+
+“When the Empire falters, the strong must consolidate. That is not cruelty. It is continuity.”
+
+If losing:
+
+“You do not understand what you interrupt.”
+
+MEDIC (14) — Moral Tension
+
+“We’re told we preserve order. But the farmlands starve.”
+
+“And merchants toast to tax relief.”
+
+“Peace is different things to different classes.”
+
+GUARD PERSONALITIES
+
+Urban Detachment has layers:
+
+The Loyalist
+
+Believes in Zanzibar’s legacy.
+Quotes history.
+Feels civil war brewing.
+
+The Cynic
+
+Doesn’t care who rules.
+Wants pay and survival.
+
+The Local Convert
+
+Joined for steady coin.
+Worried about being seen as occupier.
+
+The Rural Conscriptee
+
+Family affected by grain seizure.
+Conflicted loyalty.
+
+DISPATCH ROOM STORY CLUES
+
+Inside 11:
+
+Grain requisition tallies.
+
+Merchant tax compliance reports.
+
+Letter draft:
+
+“Equinox offers symbolic opportunity. The city must see strength.”
+
+Map marking farmland disturbances.
+
+These tell the story without exposition.
+
+WHY THIS MATTERS FOR YOUR SESSION
+
+Now the party isn’t just breaking prisoners out.
+
+They are stepping into:
+
+Merchant populism vs imperial consolidation.
+
+Rural unrest vs urban elite stability.
+
+Empire succession anxiety.
+
+Vernal equinox symbolism.
+
+The fort becomes the nerve center of a political gamble.
+
+LOCKING THE STAIRS (Clean Narrative)
+
+Stairs are barred because:
+
+“The Governor does not receive interruptions.”
+
+War Wizard upstairs maintains Arcane Lock nightly during equinox season.
+
+This makes upstairs clearly inaccessible without feeling artificial.
+
+SMALL HUMAN DETAILS
+
+Courtyard:
+
+New timber for gallows stacked.
+
+Soldiers sanding wood.
+
+Someone complains about splinters.
+
+Kitchen:
+
+Equinox wine ration locked away.
+
+Officer-only.
+
+Barracks:
+
+Gambling over whether the Emperor abdicates before winter.
+
+This is now textured and believable.
+
+Next step options:
+
+Write Colonel Angus stat block tuned to wounded Level 5 party.
+
+Write full guard stat variants.
+
+Write detailed room-by-room sensory descriptions.
+
+Generate mechanical stealth system.
+
+Create overhead tactical layout.
+
+Draft exterior fort description at dusk before equinox.
+
+Pick one.
+
+Start from my diagram again and describe each room, occupants, treasure and secrets, dialogue, exits
+
+Good. I’m going to follow your diagram exactly and treat it as ground truth. Number by number. No reinterpretation beyond what’s drawn.
+
+I’ll give for each room:
+
+Physical Description
+
+Occupants
+
+Alert Behavior
+
+Treasure / Clues
+
+Dialogue Seeds
+
+Exits
+
+1 — GATEHOUSE
+
+Description
+Heavy timber gate reinforced with iron ribs. Murder slits above. Smell of damp stone and horse sweat. Lantern light pooled low.
+
+Occupants
+2 Urban Purple Dragons (regular guards).
+
+Alert Behavior
+If combat here → Courtyard (6) goes Alert 1 only.
+
+Clues
+Pinned notice:
+
+“Execution at Dawn. Shadowhigh.”
+
+Tally sheet listing grain seizures outside the city.
+
+Dialogue
+
+“Tiffany House was quiet when we arrived. Too quiet.”
+“Governor’s making friends with silk and spellbooks now.”
+
+Exits
+South to 2 (Parade Grounds)
+Locked door west to 5 (Pens)
+
+2 — PARADE GROUNDS
+
+Description
+Open square yard, hard-packed dirt. Drill lines scored in earth. Ballista parts stacked near inner wall.
+
+Occupants
+No fixed guards. Occasional patrol crosses from 6.
+
+Alert Behavior
+Noise here draws 1 guard from 6.
+
+Clues
+Fresh timber beams — gallows construction.
+
+Chalkboard:
+
+“Equinox drill schedule.”
+
+Dialogue (passing patrol)
+
+“Dyksterhaus won’t last if Varkus secures the houses.”
+“Merchants bark. Nobles whisper. Steel listens.”
+
+Exits
+North to 1
+South to 6
+
+5 — STABLES / PENS
+
+Description
+Heavy wooden pens. Straw thick. Chains bolted to stone. Lantern hung high.
+
+Occupants
+BattleBeast in irons.
+Young Owlbear, chained.
+1 nervous recruit.
+1 veteran sergeant.
+
+Alert Behavior
+If Owlbear released → this zone goes Alert 2 immediately. Does NOT trigger fort-wide alarm unless runner escapes.
+
+Treasure
+Sergeant carries 20 gp, dice set, small Cormyrean medal.
+
+Hidden (DC 14 Perception):
+Loose chain bolt that weakens BB’s restraints.
+
+Secrets
+Secret door (DC 14 Perception) leading to 10 (Kitchen).
+
+Dialogue
+Recruit:
+
+“He beat an owlbear once, they say.”
+Veteran:
+“Doesn’t matter. Dawn takes them all.”
+
+Exits
+North locked to 1
+South to 10 (visible door)
+Secret east to 10
+
+6 — COURTYARD (INNER)
+
+Description
+Stone courtyard. Well at center. Stacked barrels. Stairs to battlements visible above (but not accessible).
+
+Occupants
+3 regular guards.
+
+Alert Behavior
+Combat here draws from 7 and 11 after 2 rounds.
+
+Clues
+Water bucket contains violet wax droplet — same as Varkus’ seal.
+
+Timber for gallows stacked nearby.
+
+Dialogue
+
+“Farmers burned a levy wagon last week.”
+“They think Dyksterhaus will protect them.”
+
+Exits
+North to 2
+East to 7
+South to 11
+
+7 — ARCADE (INNER WALL HALL)
+
+Description
+Stone arcade under outer wall. Open to air on one side. Torches flicker against columns.
+
+Occupants
+1 guard walking circuit.
+
+Alert Behavior
+If subdued quietly → no alert.
+
+Clues
+Graffiti scratched into stone:
+
+“Waterdeep for Waterdeep.”
+
+Dialogue
+
+“Not enough elf girls at the parties anymore. Even they smell change.”
+
+Exits
+West to 6
+East to 8
+
+8 — ARCADE CORRIDOR
+
+Description
+Narrow hall turning inward. Sound carries oddly.
+
+Occupants
+None stationed.
+
+Alert Behavior
+Footsteps echo; stealth disadvantage unless moving slowly.
+
+Exits
+West to 7
+East to 9
+
+9 — DISPATCH ANTECHAMBER
+
+Description
+Small administrative room. Maps of Dock Ward. Ink and quills.
+
+Occupants
+2 Elite Purple Dragons.
+
+Alert Behavior
+If they shout → 11 immediately alerted.
+
+Clues
+Marked map:
+Warehouses circled in red.
+Grain tallies from countryside.
+
+Ledger:
+
+“Tiffany House donors — pending.”
+
+Exits
+West to 8
+South locked to 14
+
+10 — KITCHEN & SUPPLIES
+
+Description
+Iron pots, simmering stew. Smell of onions and grease.
+
+Occupants
+1 cook (civilian).
+2 off-duty guards.
+
+Alert Behavior
+Cook flees; guards alert 11 only if they escape.
+
+Treasure
+Crate marked:
+“War Wizard – Restraints.”
+
+Hidden wine stash (Equinox reserve).
+
+Dialogue
+Cook (if sympathetic):
+
+“Governor courts silk and spell now. Not coin.”
+
+Guard:
+
+“Zanzibar forged an empire. Varkus just wants to hold one.”
+
+Exits
+North to 5
+East to 11
+
+11 — DISPATCH / COMMAND (ANGUS)
+
+Description
+Central command chamber. Pegboard with keys. Map table. Horn alarm mounted near door.
+
+Occupants
+Colonel Angus.
+2 Elite Guards.
+
+Alert Behavior
+If horn sounded → fort-wide Alert 3.
+
+Treasure
+Ring A (pegboard): Infirmary, Dungeon, Back Hall.
+Ring B (on Angus): Stairs up, alarm cabinet.
+
+Dispatch horn mechanism (can be sabotaged DC 18).
+
+Clues
+Letter draft:
+
+“When Roe abdicates, Waterdeep must already be aligned.”
+
+Dialogue
+Angus:
+
+“Peace is maintained, not requested.”
+“Dyksterhaus mistakes taxation for tyranny.”
+
+Exits
+North to 6
+West to 10
+South locked to 16
+East to 13
+
+12 — STAIRS UP (BARRED ABOVE)
+
+Description
+Spiral stone stair. Heavy iron-bound door at base.
+
+Occupants
+None.
+
+Access
+Locked (Ring B).
+Arcane Lock (DC 23 to break).
+Barred from above.
+
+Exits
+Upstairs (inaccessible this session)
+
+13 — BARRACKS
+
+Description
+Rows of bunks. Armor racks. Smell of oil and leather.
+
+Occupants
+6 regular guards.
+
+Alert Behavior
+If alarm in 11 → they mobilize.
+
+Treasure
+Dice pot with 45 gp.
+Letter from farmland:
+
+“They’ve taken our cattle again.”
+
+Dialogue
+
+“I joined for coin. Not for politics.”
+
+Exits
+West to 11
+South to 18
+
+14 — INFIRMARY (LOCKED)
+
+Description
+Clean white sheets. Faint abjuration glow in one chamber — the Long Rest Ward.
+
+Occupants
+1 medic.
+Lenore (weak).
+
+Alert Behavior
+Medic does not fight.
+
+Treasure
+Potion of Healing x2.
+Medallion bearing imperial crest.
+
+Dialogue
+Medic:
+
+“Equinox is meant for renewal. We prepare hangings instead.”
+
+Exits
+North locked to 9
+South locked to 19
+
+15 — SIDE GATE HOUSE
+
+Description
+Small side entrance. Storage crates.
+
+Occupants
+1 bored guard.
+
+Exits
+North to 5
+East locked to 16
+
+16 — BACK HALL
+
+Description
+Stone corridor, torchlit.
+
+Occupants
+None permanent.
+
+Exits
+North to 11
+West to 15
+East to 17
+
+17 — LOWER GUARD POST
+
+Description
+Desk, lantern, narrow corridor.
+
+Occupants
+2 guards.
+
+Alert Behavior
+If alerted → lock 20.
+
+Exits
+West to 16
+South locked to 20
+East to 18
+
+18 — LOWER BARRACKS
+
+Description
+Smaller bunks. Rougher men.
+
+Occupants
+2 regular guards.
+
+Exits
+North to 13
+West to 17
+South to 21
+
+19 — LOWER CORRIDOR
+
+Description
+Stone hall leading toward refuse pit.
+
+Occupants
+None fixed.
+
+Exits
+North to 14
+South to 22
+
+20 — STAIRS DOWN (TO DUNGEON)
+
+Description
+Spiral stone descending into torchlit gloom.
+
+Occupants
+None at door.
+
+Access
+Locked (Ring A).
+
+Exits
+Down to dungeon (Shadowhigh, next session)
+
+21 — GUARD ROOM
+
+Description
+Table, ale mugs.
+
+Occupants
+3 regular guards.
+
+Exits
+North to 18
+
+22 — TRASH / ESCAPE
+
+Description
+Refuse pit with narrow postern gate beyond.
+
+Occupants
+2 guards occasionally rotate here.
+
+Exits
+North to 19
+East to outside (escape)
+
+23 — INNER STORAGE
+
+Description
+Supply room. Crates of powder and rope.
+
+Occupants
+None.
+
+Treasure
+Ballista bolts.
+Powder keg (dangerous).
+
+Exits
+West to 14
+
+This now matches your diagram faithfully, integrates your politics, and maintains multiple paths and survivable failure states.
+
+Next: stat blocks for Angus and the urban Purple Dragons.
+
+Branched from Fort Maximillien Schema
+
+write me a markdown file for the dungeon now.  Use my direction and writing style for the room descriptions etc, and make it as useable at the table as possible. dont over abbreviate, use a good style (MINE). I am going to use this in a Homebrewery website generator so I need it in markdown format described here: # The Homebrewery *V3* 
+Welcome traveler from an antique land. Please sit and tell us of what you have seen. The unheard of monsters, who slither and bite. Tell us of the wondrous items and and artifacts you have found, their mysteries yet to be unlocked. Of the vexing vocations and surprising skills you have seen.
+
+### Homebrew D&D made easy
+The Homebrewery makes the creation and sharing of authentic looking Fifth-Edition homebrews easy. It uses [Markdown](https://help.github.com/articles/markdown-basics/) with a little CSS magic to make your brews come to life.
+
+**Try it!** Simply edit the text on the left and watch it *update live* on the right. Note that not every button is visible on this demo page. Click New {{fas,fa-plus-square}} in the navbar above to start brewing with all the features!
+
+### Editing and Sharing
+When you create a new homebrew document ("brew"), your document will be given a *edit link* and a *share link*.
+
+The *edit link* is where you write your brew. If you edit a brew while logged in, you are added as one of the brew's authors, and no one else can edit that brew until you add them as a new author via the {{fa,fa-info-circle}} **Properties** tab. Brews without any author can still be edited by anyone with the *edit link*, so be careful about who you share it with if you prefer to work without an account.
+
+Anyone with the *share url* will be able to access a read-only version of your homebrew.
+
+{{note
+##### PDF Creation
+PDF Printing works best in Google Chrome. If you are having quality/consistency issues, try using Chrome to print instead.
+
+After clicking the "Print" item in the navbar a new page will open and a print dialog will pop-up.
+* Set the **Destination** to "Save as PDF"
+* Set **Paper Size** to "Letter"
+* If you are printing on A4 paper, make sure to have the **PRINT → {{far,fa-file}} A4 Pagesize** snippet in your brew
+* In **Options** make sure "Background Images" is selected.
+* Hit print and enjoy! You're done!
+
+If you want to save ink or have a monochrome printer, add the **PRINT → {{fas,fa-tint}} Ink Friendly** snippet to your brew!
+}}
+
+![homebrew mug](https://i.imgur.com/hMna6G0.png) {position:absolute,bottom:20px,left:130px,width:220px}
+
+{{artist,bottom:160px,left:100px
+##### Homebrew Mug
+[naturalcrit](https://homebrew.naturalcrit.com)
+}}
+
+{{pageNumber 1}}
+{{footnote PART 1 | FANCINESS}}
+
+\column
+
+## V3 vs Legacy
+The Homebrewery has two renderers: Legacy and V3. The V3 renderer is recommended for all users because it is more powerful, more customizable, and continues to receive new feature updates while Legacy does not. However Legacy mode will remain available for older brews and veteran users.
+	
+At any time, any individual brew can be changed to your renderer of choice via the {{fa,fa-info-circle}} **Properties** tab on your brew. However, converting between Legacy and V3 may require heavily tweaking the document; while both renderers can use raw HTML, V3 prefers a streamlined curly bracket syntax that avoids the complex HTML structures required by Legacy.
+
+
+Scroll down to the next page for a brief summary of the changes and features available in V3!
+#### New Things All The Time!
+Check out the latest updates in the full changelog [here](/changelog).
+
+### Helping out
+Like this tool? Head over to our [Patreon](https://www.patreon.com/Naturalcrit) to help us keep the servers running.
+
+
+This tool will **always** be free, never have ads, and we will never offer any "premium" features or whatever.
+
+### Bugs, Issues, Suggestions?
+- Check the [Frequently Asked Questions](/faq) page first for quick answers.
+- Get help or the right look for your brew by posting on [r/Homebrewery](https://www.reddit.com/r/homebrewery/submit?selftext=true&title=%5BIssue%5D%20Describe%20Your%20Issue%20Here) or joining the [Discord Of Many Things](https://discord.gg/by3deKx).
+- Report technical issues or provide feedback on the [GitHub Repo](https://github.com/naturalcrit/homebrewery/).
+
+### Legal Junk
+The Homebrewery is licensed using the [MIT License](https://github.com/naturalcrit/homebrewery/blob/master/license). Which means you are free to use The Homebrewery codebase any way that you want, except for claiming that you made it yourself.
+
+If you wish to sell or in some way gain profit for what's created on this site, it's your responsibility to ensure you have the proper licenses/rights for any images or resources used.
+#### Crediting Us
+If you'd like to credit us in your brew, we'd be flattered! Just reference that you made it with The Homebrewery.
+
+### More Homebrew Resources
+[![Discord](/assets/discordOfManyThings.svg){width:50px,float:right,padding-left:10px}](https://discord.gg/by3deKx)
+
+If you are looking for more 5e Homebrew resources check out [r/UnearthedArcana](https://www.reddit.com/r/UnearthedArcana/) and their list of useful resources [here](https://www.reddit.com/r/UnearthedArcana/wiki/resources). The [Discord Of Many Things](https://discord.gg/by3deKx) is another great resource to connect with fellow homebrewers for help and feedback.
+
+
+{{position:absolute;top:20px;right:20px;width:auto
+[![Discord](/assets/discord.png){height:30px}](https://discord.gg/by3deKx)
+[![Github](/assets/github.png){height:30px}](https://github.com/naturalcrit/homebrewery)
+[![Patreon](/assets/patreon.png){height:30px}](https://patreon.com/NaturalCrit)
+[![Reddit](/assets/reddit.png){height:30px}](https://www.reddit.com/r/homebrewery/)
+}}
+
+\page
+
+## Markdown+
+The Homebrewery aims to make homebrewing as simple as possible, providing a live editor with Markdown syntax that is more human-readable and faster to write with than raw HTML.
+
+From version 3.0.0, with a goal of adding maximum flexibility without users resorting to complex HTML to accomplish simple tasks, Homebrewery provides an extended verision of Markdown with additional syntax.
+
+### Curly Brackets
+Standard Markdown lacks several equivalences to HTML. Hence, we have introduced {{ }} as a replacement for <span></span> and <div></div> for a cleaner custom formatting. Inline spans and block elements can be created and given ID's and Classes, as well as CSS properties, each of which are comma separated with no spaces. Use double quotes if a value requires spaces. Spans and Blocks start the same:
+
+#### Span
+My favorite author is {{pen,#author,color:orange,font-family:"trebuchet ms" Brandon Sanderson}}.  The orange text has a class of pen, an id of author, is colored orange, and given a new font. The first space outside of quotes marks the beginning of the content.
+
+
+#### Block
+{{purple,#book,text-align:center,background:#aa88aa55
+My favorite book is Wheel of Time. This block has a class of purple, an id of book, and centered text with a colored background. The opening and closing brackets are on lines separate from the block contents.
+}}
+
+#### Injection
+For any element not inside a span or block, you can *inject* attributes using the same syntax but with single brackets in a single line immediately after the element.
+
+Inline elements like *italics* {color:#D35400} or images require the injection on the same line.
+
+Block elements like headers require the injection to start on the line immediately following.
+
+##### A Purple Header
+{color:purple,text-align:center}
+
+\* *this does not currently work for tables yet*
+
+### Vertical Spacing
+A blank line can be achieved with a run of one or more : alone on a line. More :'s will create more space.
+
+::
+
+
+Much nicer than <br><br><br><br><br>
+
+### Definition Lists
+**Example** :: V3 uses HTML *definition lists* to create "lists" with hanging indents.
+
+
+
+### Column Breaks
+Column and page breaks with \column and \page.
+
+\column
+### Tables
+Tables now allow column & row spanning between cells. This is included in some updated snippets, but a simplified example is given below.
+
+A cell can be spanned across columns by grouping multiple pipe | characters at the end of a cell.
+
+Row spanning is achieved by adding a ^ at the end of a cell just before the |.  
+
+These can be combined to span a cell across both columns and rows. Cells must have the same colspan if they are to be rowspan'd.
+
+##### Example
+| Head A | Spanned Header ||
+| Head B | Head C | Head D |
+|:-------|:------:|:------:|
+| 1A     |    1B  |    1C  |
+| 2A    ^|    2B  |    2C  |
+| 3A    ^|    3B       3C ||
+| 4A     |    4B       4C^||
+| 5A    ^|    5B  |    5C  |
+| 6A     |    6B ^|    6C  |
+
+## Images
+Images must be hosted online somewhere, like [Imgur](https://www.imgur.com). You use the address to that image to reference it in your brew\*.
+
+Using *Curly Injection* you can assign an id, classes, or inline CSS properties to the Markdown image syntax.
+
+![alt-text](https://s-media-cache-ak0.pinimg.com/736x/4a/81/79/4a8179462cfdf39054a418efd4cb743e.jpg) {width:100px,border:"2px solid",border-radius:10px}
+
+\* *When using Imgur-hosted images, use the "direct link", which can be found when you click into your image in the Imgur interface.*
+
+## Snippets
+Homebrewery comes with a series of *code snippets* found at the top of the editor pane that make it easy to create brews as quickly as possible.  Just set your cursor where you want the code to appear in the editor pane, choose a snippet, and make the adjustments you need.
+
+## Style Editor Panel
+{{fa,fa-paint-brush}} Usually overlooked or unused by some users, the **Style Editor** tab is located on the right side of the Snippet bar. This editor accepts CSS for styling without requiring <style> tags-- anything that would have gone inside style tags before can now be placed here, and snippets that insert CSS styles are now located on that tab.
+
+{{pageNumber 2}}
+{{footnote PART 2 | BORING STUFF}}
+
+Below is a Homebrewery V3–ready markdown file for Fort Maximillien.
+It follows your tone: grounded, political, restrained, table-usable, no fluff, no gimmicks.
+It is written to be dropped directly into Homebrewery.
+
+# Fort Maximillien
+### An Imperial Outpost in Waterdeep
+
+The Empire does not collapse in fire.  
+It loosens in quiet rooms, at dinners, over wine.
+
+Fort Maximillien stands inside Waterdeep like a mailed fist resting politely on a table.
+
+Purple banners hang from its battlements. Ballistae face inward toward the city as often as outward toward imagined enemies. Timber for a gallows lies stacked in the courtyard.
+
+Shadowhigh hangs at dawn.
+
+BattleBeast waits in irons.
+
+Lenore lies behind a locked infirmary door.
+
+Colonel Angus keeps the keys.
+
+---
+
+## Running the Fort
+
+This is not a dungeon of monsters. It is a disciplined garrison.
+
+Alert is localized unless the horn in Area 11 is sounded.
+
+Each zone escalates independently:
+
+- **Suspicious** — patrols double in that area.
+- **Search** — doors sealed in that zone, runners dispatched.
+- **Lockdown** — only if the Dispatch horn sounds.
+
+The stairs to the upper level (Area 12) are locked, Arcane Locked, and barred from above. Access is not realistically possible this session.
+
+The dungeon stairs (Area 20) require keys from Area 11.
+
+---
+
+\page
+
+## 1. Gatehouse
+
+Stone arch, iron-bound gates, murder slits above. Two lanterns burn low.
+
+**Occupants:** 2 Purple Dragon Guards.
+
+They are tired, irritated by city posting, quietly resentful of Waterdeep’s contempt.
+
+**Dialogue**
+> “Tiffany House was silk and silver tonight. Governor’s making new friends.”  
+> “Dyksterhaus can shout all he likes. Merchants shout. Nobles decide.”
+
+**Clues**
+- Notice nailed to beam: *Execution at Dawn.*
+- Grain levy tally sheet.
+
+**Exits**
+- South to Area 2.
+- West (locked) to Area 5.
+
+---
+
+## 2. Parade Grounds
+
+Hard-packed yard scored with drill lines. Fresh-cut timber stacked for gallows construction.
+
+No fixed guards. Patrols cross from Area 6.
+
+**Overheard**
+> “Farmers burned another levy cart.”  
+> “Equinox is a bad time for unrest.”
+
+**Exits**
+- North to Area 1.
+- South to Area 6.
+
+---
+
+## 5. Pens & Stables
+
+Straw thick underfoot. Iron rings bolted into stone.
+
+BattleBeast chained. A young owlbear shackled in a reinforced pen. It is sedated but restless.
+
+**Occupants**
+- 1 young recruit.
+- 1 veteran sergeant.
+
+The recruit is uneasy. The sergeant believes in discipline.
+
+**Dialogue**
+Recruit:
+> “They’ll hang the girl at dawn. The lion-man after.”
+
+Sergeant:
+> “Spectacle prevents revolt.”
+
+**Treasure**
+- 20 gp.
+- Dice set.
+- Small Cormyrean medal.
+
+**Secret**
+A concealed door (DC 14 Perception) leads to Area 10.
+
+**Exits**
+- North (locked) to Area 1.
+- South to Area 10.
+- Secret to Area 10.
+
+---
+
+## 6. Inner Courtyard
+
+Stone square around a central well. Barrels stacked along walls. Ballista arms visible above on the battlements.
+
+Three guards converse quietly.
+
+**Dialogue**
+> “Varkus speaks of Zanzibar like a prayer.”  
+> “Steel first. Politics second.”
+
+**Clues**
+- Violet wax droplet near the well.
+- Gallows timber marked with tomorrow’s date.
+
+**Exits**
+- North to Area 2.
+- East to Area 7.
+- South to Area 11.
+
+---
+
+## 7. Arcade
+
+A covered stone walk beneath the wall. One side open to the air.
+
+One guard walks a slow circuit.
+
+**Graffiti**
+“Waterdeep for Waterdeep.”
+
+**Dialogue**
+> “Not enough elf girls at the parties anymore. Old houses are nervous.”
+
+**Exits**
+- West to Area 6.
+- East to Area 8.
+
+---
+
+## 8. Inner Corridor
+
+Narrow stone hall. Footsteps echo.
+
+No stationed guards.
+
+**Exits**
+- West to Area 7.
+- East to Area 9.
+
+---
+
+## 9. Dispatch Antechamber
+
+Map table. Ink-stained desk. Dock Ward marked in red.
+
+**Occupants**
+- 2 Elite Purple Dragons.
+
+If either escapes, they alert Area 11.
+
+**Clues**
+- Ledger labeled “Tiffany House – Donors.”
+- Grain requisition maps from outer farmlands.
+
+**Exits**
+- West to Area 8.
+- South (locked) to Area 14.
+
+---
+
+\column
+
+## 10. Kitchen
+
+Iron pots, simmering stew, sweat and onion.
+
+**Occupants**
+- Civilian cook.
+- 2 off-duty guards.
+
+The cook is bitter about grain seizures.
+
+**Dialogue**
+Cook:
+> “Farmers starve so the fort eats.”
+
+Guard:
+> “Zanzibar forged unity. Varkus preserves it.”
+
+**Treasure**
+- Equinox wine (officers only).
+- Crate labeled: *War Wizard Restraints.*
+
+**Exits**
+- North to Area 5.
+- East to Area 11.
+
+---
+
+## 11. Dispatch & Command
+
+The nerve center.
+
+Pegboard of keys behind the desk. Alarm horn mounted beside the door. Map of Waterdeep pinned with colored markers.
+
+**Occupants**
+- Colonel Angus.
+- 2 Elite Guards.
+
+Angus is composed, never raises his voice.
+
+**Dialogue**
+> “Peace is not requested. It is maintained.”  
+> “Dyksterhaus mistakes taxation for tyranny.”
+
+**Keys**
+- **Ring A (on pegboard):** Infirmary (14), Dungeon (20), Back Hall (16).
+- **Ring B (on Angus):** Stairs Up (12), Alarm Cabinet.
+
+**Clues**
+Letter draft:
+> “When Roe abdicates, Waterdeep must already be aligned.”
+
+**Exits**
+- North to Area 6.
+- West to Area 10.
+- South (locked) to Area 16.
+- East to Area 13.
+
+---
+
+\page
+
+## 12. Stairs Up (Inaccessible)
+
+Heavy oak door bound in iron.
+
+Locked (Ring B). Arcane Lock in place. Barred from above.
+
+Upstairs holds General Varkus, War Wizards, artillery.
+
+Not realistically accessible this session.
+
+---
+
+## 13. Barracks
+
+Rows of bunks. Armor stands. Smell of oil.
+
+**Occupants**
+6 guards resting, gambling quietly.
+
+**Dialogue**
+> “I joined for coin, not politics.”  
+> “The Empire’s weakening. Someone will fill the space.”
+
+**Treasure**
+- 45 gp in dice pot.
+- Letter from rural conscript’s family describing cattle seizure.
+
+**Exits**
+- West to Area 11.
+- South to Area 18.
+
+---
+
+## 14. Infirmary
+
+White sheets. Quiet. A faint abjuration glow marks a warded recovery chamber.
+
+Lenore lies here, weak but conscious.
+
+**Occupants**
+- 1 medic.
+
+The medic does not want bloodshed.
+
+**Dialogue**
+> “Equinox is meant for renewal. Not gallows.”
+
+**Treasure**
+- 2 Potions of Healing.
+
+**Exits**
+- North (locked) to Area 9.
+- South (locked) to Area 19.
+
+---
+
+## 15. Side Gate
+
+Small storage room with exterior access.
+
+**Occupant**
+- 1 bored guard.
+
+**Exits**
+- North to Area 5.
+- East (locked) to Area 16.
+
+---
+
+## 16. Back Hall
+
+Torchlit corridor. Quiet.
+
+**Exits**
+- North to Area 11.
+- West to Area 15.
+- East to Area 17.
+
+---
+
+## 17. Lower Guard Post
+
+Desk, lantern, narrow choke point.
+
+**Occupants**
+- 2 guards.
+
+If alerted, they attempt to secure Area 20.
+
+**Exits**
+- West to Area 16.
+- South (locked) to Area 20.
+- East to Area 18.
+
+---
+
+\column
+
+## 18. Lower Barracks
+
+Rougher bunks. Harder men.
+
+**Occupants**
+- 2 guards.
+
+**Dialogue**
+> “Ard Farkle’s got messy. Civilians dead.”  
+> “The dungeon’s full of blame.”
+
+**Exits**
+- North to Area 13.
+- West to Area 17.
+- South to Area 21.
+
+---
+
+## 19. Lower Corridor
+
+Stone hall leading toward refuse area.
+
+**Exits**
+- North to Area 14.
+- South to Area 22.
+
+---
+
+## 20. Stairs Down
+
+Spiral stone descending into torchlight.
+
+Locked (Ring A).
+
+Below lies the dungeon. Shadowhigh waits there.
+
+---
+
+## 21. Guard Room
+
+Ale mugs, cards on table.
+
+**Occupants**
+- 3 guards.
+
+**Dialogue**
+> “If Varkus succeeds, we’re heroes.”  
+> “If he fails, we’re occupiers.”
+
+**Exits**
+- North to Area 18.
+
+---
+
+## 22. Refuse & Postern Gate
+
+Refuse pit. Narrow iron gate leading outside.
+
+Occasional guard rotation.
+
+**Exits**
+- North to Area 19.
+- East to exterior escape.
+
+---
+
+## 23. Inner Storage
+
+Powder kegs. Ballista bolts. Rope.
+
+Dangerous if ignited.
+
+**Exits**
+- West to Area 14.
+
+---
+
+# Political Undercurrent
+
+- Dyksterhaus openly condemns imperial taxation.
+- Varkus cultivates old-money elites at Tiffany House.
+- Rural farmers revolt over grain and cattle seizure.
+- Ard Farkle’s violence fuels resentment.
+- Vernal Equinox approaches.
+
+The fort is not merely a prison.
+
+It is a pressure chamber.
+
+Shadowhigh hangs at dawn.
+
+If you'd like next:
+
+Colonel Angus stat block (Homebrewery formatted)
+
+Urban Purple Dragon stat variants
+
+A separate “NPC & Faction” appendix page
+
+Or a tactical map page sized for 5 ft grid
+
+Just tell me.
