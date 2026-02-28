@@ -1,0 +1,625 @@
+```metadata
+title: Fort Maximillien
+description: 'A stealth prison-break module for a wounded 5th-level party in occupied Waterdeep.'
+tags: [waterdeep, stealth, prison-break, politics, purple-dragons]
+systems: [dnd5e]
+renderer: V3
+theme: 5ePHB
+
+```
+
+```css
+/* Match the look/feel of the provided template */
+.page {
+  padding-bottom: 1.1cm;
+}
+.page .small {
+  font-size: 0.92em;
+  line-height: 1.25em;
+}
+.page .quiet {
+  opacity: 0.85;
+}
+.page hr {
+  border: none;
+  border-top: 1px solid #00000025;
+  margin: 0.35cm 0;
+}
+.page blockquote {
+  border-left: 4px solid #00000022;
+  padding-left: 0.35cm;
+  margin-left: 0;
+}
+.page .twoCol {
+  column-count: 2;
+  column-gap: 0.65cm;
+}
+.page .threeCol {
+  column-count: 3;
+  column-gap: 0.5cm;
+}
+.page table th, .page table td {
+  vertical-align: top;
+}
+```
+
+# Fort Maximillien
+## A Stealth Prison-Break in Occupied Waterdeep
+
+{{quote
+"Peace is maintained, not requested."  
+{{attribution Colonel Angus, Urban Detachment of the Purple Dragons}}
+}}
+
+### Adventure Summary
+**Fort Maximillien** is a fortified garrison and guard post in Waterdeep, held by a **Cormyrean Purple Dragon urban detachment**. Your party is battered at the end of an adventuring day, with two allies captured inside.
+
+**Tonight’s objective (this session):**
+- **Extract Lenore** from the locked Infirmary (14) and secure a safe **Long Rest Chamber**.
+- **Extract BattleBeast** from the Pens (5).
+- Escape alive.
+
+**Next session hooks (do not fully resolve tonight):**
+- **Maverick** is held upstairs for interrogation by **General Varkus**.
+- **Shadowhigh** is in the dungeon below, scheduled for hanging at dawn unless events change.
+
+---
+
+# Background & Political Fault Lines
+Waterdeep is not a frontier town, and it hates being treated like one.
+
+### The Factions
+**General Varkus (Imperial Governor).** Wants a strong, multinational empire with a hard military core—an echo of **Zanzibar** (this world’s Caesar). Varkus is courting Waterdeep’s old-money elite and ancient trades—**a new development**.
+
+**The Unmasked Lord ap Dyksterhaus.** Openly flaunts imperial customs, rails against overtaxation, and champions merchant interests. His base is the merchant class (and those who profit from them).
+
+**The Old Houses.** Ancient wealth and older magic. They despise the merchant class but love imperial peace, trade routes, and access. Varkus courting them is a tectonic shift.
+
+**The Farmlands.** Revolts flare beyond the city over imperial seizure of grain and cattle.
+
+### Recent Incidents (Tonight)
+- A **foiled heist at Tiffany House**, where Varkus was raising funds and making friends among the elite.
+- A violent incident at **Ard Farkle’s**: a convict later held in the fort fired into bystanders; **carts burned and horses died**.
+- The vernal equinox approaches. The parties are thinner. The city’s smiles feel rented.
+
+---
+
+# Running the Fort
+This module is built to avoid “one bad roll = TPK.” It’s a pressure system.
+
+## Zone Alerts (Localized)
+Track alert separately for each zone:
+- **Zone A:** Exterior/Gate (1–2)
+- **Zone B:** Courtyard & Arcade (6–9)
+- **Zone C:** Service & Command (10–13)
+- **Zone D:** Lower Halls (14–22)
+
+Each zone has **Alert 0–3**:
+- **0 Normal:** routine patrols.
+- **1 Suspicious:** doubled checks, a runner dispatched.
+- **2 Active Search:** doors watched, patrols tighten.
+- **3 Lockdown:** doors barred, reinforcements stage.
+
+**Fort-wide Lockdown** only happens if the **Dispatch Horn** in (11) is sounded.
+
+## Keys (Two Rings)
+**Ring A (on wall pegboard in 11):** Infirmary (14), Back Hall (16), Dungeon stairs (20).  
+**Ring B (on Colonel Angus):** Stairs Up (12), Alarm Cabinet, upstairs protocols.
+
+**Key Visibility:** the pegboard is visible from the doorway of (11). Ring B is clipped to Angus’ sword belt.
+
+## Stairs Up Are Inaccessible Tonight
+The **stairs up (12)** are:
+- Locked (Ring B)
+- Under **Arcane Lock** from above (War Wizard protocol)
+- **Barred from the top** (physical bar)
+
+Even with Ring B, opening (12) requires upstairs access. This keeps tonight focused.
+
+---
+
+# Rumors & Overheard Talk (Use as Breadcrumbs)
+Roll or pick when PCs pause to listen.
+
+{{twoCol
+| d8 | Rumor |
+|---:|---|
+| 1 | “Dyksterhaus says the Emperor bleeds merchants dry while nobles dine.” |
+| 2 | “Varkus wants Zanzibar’s kind of unity—steel first, then peace.” |
+| 3 | “The old houses like imperial peace. They don’t like merchants.” |
+| 4 | “Farmland levies doubled. They’re burning tallies outside the walls.” |
+| 5 | “Tiffany House welcomed Varkus. That’s new. That’s dangerous.” |
+| 6 | “At Ard Farkle’s, someone fired into the street. Horses burned in trace.” |
+| 7 | “Equinox is near. The parties are smaller. The daughters are kept home.” |
+| 8 | “Angus doesn’t shout. That’s why men fear him.” |
+}}
+
+---
+
+# Fort Schema (Node Map)
+Use this as the tactical connectivity reference.
+
+```text
+    (Outside)
+       |
+     [1]--[2]
+      |    |
+     [5]  [6]--[7]--[8]--[9]
+      |     |           |
+     [10]  [11]---------[14]--[23]
+      |     |            |
+     [15]--[16]--[17]--[18]--[13]
+              |     |     |
+             [20]  [21]  [18]
+              |            |
+           (Dungeon)      [19]--[22]--> Escape
+```
+
+---
+
+# Room Key (1–23)
+Each entry includes: **Read-Aloud**, **Occupants**, **Treasure/Clues**, **Secrets**, **Dialogue**, **Exits**, and typical **DCs**.
+
+## 1. Gatehouse
+**Read-Aloud.** Iron-ribbed timber doors, damp stone, and lantern light pooled like spilled oil. Above, slits watch the street.
+
+**Occupants.** 2 Purple Dragon Guards.
+
+**Treasure/Clues.** Notice nailed to beam: *“Execution at dawn: Shadowhigh.”* Grain seizure tally.
+
+**Dialogue.**
+- “Governor’s making friends with silk and spellbooks now.”
+- “Dyksterhaus shouts at taxes, but the old houses count bloodlines.”
+
+**Exits.** To 2. Locked access to 5.
+
+**DCs.** Gate lock DC 15 (tools). Quiet entry DC 13 (Stealth).
+
+---
+
+## 2. Parade Grounds
+**Read-Aloud.** Hard-packed dirt scored with drill lines. Timber beams stacked for something ugly.
+
+**Occupants.** None stationed; patrols cross.
+
+**Treasure/Clues.** Chalkboard: equinox drills. Ballista components.
+
+**Dialogue.**
+- “Peace is expensive. Somebody always pays.”
+
+**Exits.** To 1 and 6.
+
+---
+
+## 5. Stables / Animal Pens (BattleBeast)
+**Read-Aloud.** Straw rot, iron rings, and chains bolted into stone. Breath steams in the lanternlight.
+
+**Occupants.** BattleBeast in irons; 1 chained **Owlbear** (not the prior one); 1 nervous recruit; 1 veteran.
+
+**Treasure/Clues.** Sergeant’s purse (20 gp), a ration chit stamped *“Seizure—Farmland.”*
+
+**Secrets.** **Secret door to 10** (DC 14 Perception).
+
+**Dialogue.**
+- Recruit: “He’s not a man. Not a beast. Just… trouble.”
+- Veteran: “Dawn takes trouble. That’s the order.”
+
+**Exits.** To 1 (locked), to 10, secret to 10.
+
+**DCs.** Pen locks DC 16; Owlbear chain DC 17.
+
+---
+
+## 6. Courtyard (Inner)
+**Read-Aloud.** Stone yard around a well. Barrels stacked. Timber for gallows piled like firewood.
+
+**Occupants.** 3 guards.
+
+**Treasure/Clues.** Violet wax droplet on a bucket rim (Varkus’ seal).
+
+**Dialogue.**
+- “Farmers are burning levy wagons. The city pretends it’s weather.”
+
+**Exits.** To 2, 7, 11.
+
+---
+
+## 7. Arcade Hall
+**Read-Aloud.** A colonnade beneath the castle wall—open air on one side, stone echo on the other.
+
+**Occupants.** 1 patrolling guard.
+
+**Treasure/Clues.** Scratched graffiti: *“Waterdeep for Waterdeep.”*
+
+**Dialogue.**
+- “Equinox used to be laughter. Now it’s eyes.”
+
+**Exits.** To 6 and 8.
+
+---
+
+## 8. Arcade Corridor
+**Read-Aloud.** The hallway tightens; every footstep feels like a confession.
+
+**Occupants.** None stationed.
+
+**Treasure/Clues.** A dropped seal-strip: “Tiffany House—donors pending.”
+
+**Exits.** To 7 and 9.
+
+---
+
+## 9. Dispatch Antechamber
+**Read-Aloud.** Ink, quills, and maps of the Dock Ward pinned with brass tacks.
+
+**Occupants.** 2 elite guards.
+
+**Treasure/Clues.** Warehouse map marked in red; a ledger of merchant tax arrears.
+
+**Dialogue.**
+- “Dyksterhaus wants the city’s coin. Varkus wants the city’s spine.”
+
+**Exits.** To 8; locked to 14.
+
+**DCs.** Door to 14 DC 18 (tools) or Ring A.
+
+---
+
+## 10. Kitchen & Supplies
+**Read-Aloud.** Onion, grease, and simmered bone. A cook stares like you’ve interrupted war.
+
+**Occupants.** 1 cook (civilian), 2 off-duty guards.
+
+**Treasure/Clues.** Crate: *“War Wizard Restraints.”* Equinox wine (officer-only).
+
+**Dialogue.**
+- Cook: “Old houses don’t love Varkus. They love what he might prevent.”
+
+**Exits.** To 5 and 11.
+
+---
+
+## 11. Command & Dispatch (Colonel Angus)
+**Read-Aloud.** A map table, a pegboard of keys, and a horn mounted like a weapon.
+
+**Occupants.** **Colonel Angus** + 2 elite guards.
+
+**Treasure/Clues.** Ring A on pegboard. Letter draft: *“When Roe abdicates…”*
+
+**Secrets.** **Alarm horn sabotage** (DC 18 Thieves’ Tools) disables fort-wide lockdown trigger.
+
+**Dialogue (Angus).**
+- “Noise is for cities without discipline.”
+- “Zanzibar united an empire. He did not ask.”
+
+**Exits.** To 6, 10, 13; locked to 16.
+
+**DCs.** Lock to 16 DC 17 or Ring A.
+
+---
+
+## 12. Stairs Up (Inaccessible Tonight)
+**Read-Aloud.** Spiral stone stair behind an iron-bound door that feels like it was built to refuse you.
+
+**Occupants.** None.
+
+**Mechanics.** Locked (Ring B), Arcane Lock (DC 23), barred from above.
+
+**Exits.** Up (no access this session).
+
+---
+
+## 13. Barracks
+**Read-Aloud.** Bunks, oil, leather. Men sleeping in armor because the city hates them.
+
+**Occupants.** 6 guards.
+
+**Treasure/Clues.** Dice pot (45 gp). Letter from farmland: *“They’ve taken our cattle again.”*
+
+**Dialogue.**
+- “The nobles toast peace. The merchants toast taxes. We toast not dying.”
+
+**Exits.** To 11 and 18.
+
+---
+
+## 14. Infirmary (Lenore) + Long Rest Chamber
+**Read-Aloud.** Clean sheets. A faint abjuration glow in the back room—quiet power, not loud magic.
+
+**Occupants.** 1 medic; **Lenore** (weak).
+
+**Treasure/Clues.** 2 Potions of Healing; officer charts referencing Tiffany House injuries.
+
+**Long Rest Chamber.** A warded room where the fort’s officers recover. If the PCs secure it and hold the doors, they can take a long rest.
+
+**Dialogue.**
+- Medic: “Equinox is meant for renewal. We prepare hangings instead.”
+
+**Exits.** Locked to 9; locked to 19; to 23.
+
+---
+
+## 15. Side Gate House
+**Read-Aloud.** A small postern entry with crates and dust. The kind of door people forget until it matters.
+
+**Occupants.** 1 bored guard.
+
+**Treasure/Clues.** Smuggled apples from outside the city (farmland sympathy).
+
+**Dialogue.**
+- “My cousin’s farm got seized. I’m here guarding nobles.”
+
+**Exits.** To 16.
+
+---
+
+## 16. Back Hall
+**Read-Aloud.** Stone corridor, torchlit, quiet enough to hear your own breathing lie.
+
+**Occupants.** None stationed.
+
+**Treasure/Clues.** Spare manacles; a broken wax seal with Varkus’ crest.
+
+**Exits.** To 11, 15, 17.
+
+---
+
+## 17. Guard Post (Lower)
+**Read-Aloud.** A desk, a lantern, and two men who look like they’ve been told this corridor matters.
+
+**Occupants.** 2 guards.
+
+**Treasure/Clues.** A key tag marked “20” (teaser that keys exist even if they don’t have them).
+
+**Dialogue.**
+- “If the horn blows, we seal the stairs.”
+
+**Exits.** To 16, 18, locked to 20.
+
+---
+
+## 18. Lower Barracks / Watch Hall
+**Read-Aloud.** Rougher bunks. Rougher men. The smell of wet wool.
+
+**Occupants.** 2 guards.
+
+**Treasure/Clues.** A wanted broadside: “ap Dyksterhaus—sedition.”
+
+**Dialogue.**
+- “He says taxes are tyranny. Then he spends merchant coin on speeches.”
+
+**Exits.** To 13, 17, 21.
+
+---
+
+## 19. Lower Corridor
+**Read-Aloud.** The air grows colder and dirtier, as if the stone itself resents what it carries.
+
+**Occupants.** None.
+
+**Treasure/Clues.** Burn marks on boots—Ard Farkle aftermath detail.
+
+**Exits.** To 14 and 22.
+
+---
+
+## 20. Stairs Down (Dungeon Access)
+**Read-Aloud.** A spiral throat descending into torchlit gloom.
+
+**Occupants.** None at the door.
+
+**Mechanics.** Locked (Ring A) or DC 22 tools.
+
+**Exits.** Down to dungeon (Shadowhigh, next session).
+
+---
+
+## 21. Guard Room
+**Read-Aloud.** A table, ale, and men who joke too loudly to forget what they do.
+
+**Occupants.** 3 guards.
+
+**Treasure/Clues.** A half-written letter: “To my sister—if the farms rise…”.
+
+**Dialogue.**
+- “Zanzibar would’ve crushed this city in a week.”
+
+**Exits.** To 18.
+
+---
+
+## 22. Trash / Escape Postern
+**Read-Aloud.** Refuse pit and a narrow gate leading to the outside stink of the city.
+
+**Occupants.** 2 guards rotate through.
+
+**Treasure/Clues.** A scorched harness buckle (Ard Farkle horses).
+
+**Dialogue.**
+- “If you run, run now. Equinox makes men brave.”
+
+**Exits.** To 19; to outside escape.
+
+---
+
+## 23. Inner Storage
+**Read-Aloud.** Powder, rope, and crates stamped with imperial marks.
+
+**Occupants.** None.
+
+**Treasure/Clues.** Ballista bolts; powder keg; sealed invitation list for Tiffany House.
+
+**Secrets.** A loose stone (DC 15 Investigation) hides a note: *“Old houses favor peace. Varkus favors power. Dyksterhaus favors coin.”*
+
+**Exits.** To 14.
+
+---
+
+# Encounter Tools
+
+## Patrols (Baseline)
+- **Courtyard loop:** 6 → 7 → 8 → 7 → 6 (every 10 minutes)
+- **Lower loop:** 17 → 18 → 21 → 18 → 17 (every 12 minutes)
+- **Random check:** every 15 minutes roll 1d6; on 1, a runner crosses 2 or 6.
+
+## Owlbear Chaos (Optional Lever)
+If released, roll 1d6:
+1–2 attacks nearest creature, 3–4 flees, 5–6 mauls Purple Dragons first.
+
+---
+
+# Stat Blocks
+
+### Purple Dragon Guard
+{{monster
+*Medium humanoid (human), lawful neutral*
+___
+**Armor Class** :: 16 (chain shirt, shield)
+**Hit Points**  :: 27 (5d8+5)
+**Speed**       :: 30 ft.
+___
+|STR|DEX|CON|INT|WIS|CHA|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|14 (+2)|12 (+1)|12 (+1)|10 (+0)|11 (+0)|11 (+0)|
+___
+**Skills** :: Perception +2, Athletics +4
+**Senses** :: passive Perception 12
+**Languages** :: Common, Chondathan
+**Challenge** :: 1/2 (100 XP)
+___
+***Formation Discipline.*** While within 5 ft. of an ally with a shield, the guard gains +1 AC.
+
+##### Actions
+***Spear.*** Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60, one target. Hit: 6 (1d6+2) piercing.
+***Shield Bash (Recharge 5–6).*** +4 to hit; Hit: 4 (1d4+2) bludgeoning and target must succeed on a DC 12 Str save or be knocked prone.
+}}
+
+### Purple Dragon Elite
+{{monster
+*Medium humanoid (human), lawful neutral*
+___
+**Armor Class** :: 18 (half plate)
+**Hit Points**  :: 58 (9d8+18)
+**Speed**       :: 30 ft.
+___
+|STR|DEX|CON|INT|WIS|CHA|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|16 (+3)|14 (+2)|14 (+2)|11 (+0)|12 (+1)|12 (+1)|
+___
+**Saving Throws** :: Str +6, Con +5
+**Skills** :: Perception +4, Athletics +6, Intimidation +4
+**Senses** :: passive Perception 14
+**Languages** :: Common
+**Challenge** :: 3 (700 XP)
+___
+***Urban Tactics.*** The elite has advantage on opportunity attacks.
+
+##### Actions
+***Multiattack.*** Two longsword attacks.
+***Longsword.*** Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8+4) slashing.
+***Net (1/Day).*** Ranged Weapon Attack: +5 to hit, range 5/15. Hit: target is restrained (escape DC 13).
+}}
+
+### War Wizard (Urban Protocol)
+{{monster
+*Medium humanoid (human), lawful neutral*
+___
+**Armor Class** :: 13 (mage armor)
+**Hit Points**  :: 44 (8d8+8)
+**Speed**       :: 30 ft.
+___
+|STR|DEX|CON|INT|WIS|CHA|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|9 (-1)|14 (+2)|12 (+1)|16 (+3)|12 (+1)|11 (+0)|
+___
+**Saving Throws** :: Int +6, Wis +4
+**Skills** :: Arcana +6, Investigation +6
+**Senses** :: passive Perception 11
+**Languages** :: Common, Draconic
+**Challenge** :: 4 (1,100 XP)
+___
+***Spellcasting.*** The war wizard is a 6th-level spellcaster (Int; save DC 14, +6 to hit).
+
+At will: *mage hand, message, minor illusion*  
+3/day each: *shield, misty step, hold person*  
+2/day each: *counterspell, web*  
+1/day each: *arcane lock* (already on 12)
+
+##### Actions
+***Dagger.*** +4 to hit; 4 (1d4+2) piercing.
+}}
+
+### Colonel Angus (Mini-Boss)
+{{monster
+*Medium humanoid (human), lawful neutral*
+___
+**Armor Class** :: 19 (breastplate, defensive training)
+**Hit Points**  :: 110 (13d8+52)
+**Speed**       :: 30 ft.
+___
+|STR|DEX|CON|INT|WIS|CHA|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|18 (+4)|16 (+3)|18 (+4)|12 (+1)|14 (+2)|13 (+1)|
+___
+**Saving Throws** :: Str +8, Dex +7, Con +8, Wis +6
+**Skills** :: Athletics +8, Insight +6, Perception +6
+**Senses** :: passive Perception 16
+**Languages** :: Common
+**Challenge** :: 7 (2,900 XP)
+___
+***Perfect Soldier.*** Angus has advantage on saving throws against being frightened or charmed.
+
+***Command Presence (1/Turn).*** When an allied Purple Dragon within 30 ft. hits with an attack, Angus can add +3 damage.
+
+***Parry.*** Angus adds +3 to AC against one melee attack that would hit him. Must see the attacker and be wielding a melee weapon.
+
+***Relentless (1/Day).*** When reduced to 0 HP, Angus drops to 1 HP instead.
+
+##### Actions
+***Multiattack.*** Angus makes three attacks (two saber, one pommel or pistol).
+
+***Saber.*** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (1d8+5) slashing.
+
+***Pommel Strike.*** Melee Weapon Attack: +8 to hit. Hit: 7 (1d6+4) bludgeoning, and target must succeed on a DC 15 Con save or be **stunned** until the end of its next turn. (Recharge 5–6)
+
+***Pistol (Urban Issue).*** Ranged Weapon Attack: +7 to hit, range 30/90, one target. Hit: 9 (1d10+3) piercing. (Reload 2)
+
+##### Reactions
+***Cut the Line.*** When a creature within 5 ft. of Angus moves away, Angus may make a Saber attack against it.
+
+##### Bonus Actions
+***Seal the Room.*** Angus orders an ally to bar a door within 30 ft. (if physically possible).
+}}
+
+---
+
+# Treasure & Rewards
+- **Lenore recovered**: access to Long Rest Chamber (14).
+- **Ring A**: keys enabling dungeon access next session.
+- **Evidence**: Tiffany House donor list (23), grain seizure tallies (1/9/11), farmland letters (13/21).
+
+---
+
+# Maps (Placeholders)
+## Overhead Tactical Map
+*Replace this section with your exported grid map when ready.*
+- Suggested scale: **5 ft per square**
+- Suggested layout: rooms as in node map; courtyard 6 is central anchor
+
+## Exterior Fort Sketch
+*Replace with exterior art / top-down of walls, gatehouse, and battlements.*
+- Gallows timber visible from outside
+- War Wizard lanterns on battlements (upstairs)
+
+---
+
+# Appendix: DM Quick-Start
+1) Start at **(2) Parade Grounds** with distant fort sounds.  
+2) Put one patrol in **(7)** and one in **(6)**.  
+3) Make **(14) Infirmary** the “win condition” of the night (safe long rest).  
+4) Make **(11) Angus** the danger: beatable, but likely avoided.
+
+{{note
+##### Design Intent
+Shortcuts are hard (high DC). Long routes are safer. Failure escalates locally; only the horn in (11) escalates globally.
+}}
