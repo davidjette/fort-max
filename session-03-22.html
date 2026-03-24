@@ -150,6 +150,51 @@
     margin-right: 0.4rem;
   }
 
+  /* --- COLLAPSIBLE TEXT --- */
+  details.scene-text-toggle {
+    max-width: 780px;
+    margin-bottom: 2rem;
+  }
+  details.scene-text-toggle > summary {
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    color: #5a5040;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+  }
+  details.scene-text-toggle > summary::-webkit-details-marker { display: none; }
+  details.scene-text-toggle > summary::before { content: "▶ "; }
+  details.scene-text-toggle[open] > summary::before { content: "▼ "; }
+  details.scene-text-toggle .scene-text-inner {
+    color: #a89a80;
+    font-size: 1.05rem;
+    margin-top: 0.6rem;
+  }
+  details.scene-text-toggle .scene-text-inner p { margin-bottom: 0.8rem; }
+
+  /* --- TOC COLLAPSIBLE --- */
+  details.toc-toggle {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+  }
+  details.toc-toggle > summary {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    color: #5a5040;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    list-style: none;
+  }
+  details.toc-toggle > summary::-webkit-details-marker { display: none; }
+  details.toc-toggle > summary::before { content: "▶ "; }
+  details.toc-toggle[open] > summary::before { content: "▼ "; }
+
   /* --- DIVIDER --- */
   .divider {
     text-align: center;
@@ -169,29 +214,31 @@
 </header>
 
 <nav class="toc">
-  <h2>Scenes</h2>
-  <ol>
-    <li><span class="num">I</span><a href="#s1">Nicollo's Awakening</a></li>
-    <li><span class="num">II</span><a href="#s2">Battle Beast Captured</a></li>
-    <li><span class="num">III</span><a href="#s3">Maverick's Arrest</a></li>
-    <li><span class="num">IV</span><a href="#s4">Heyu in the Barn</a></li>
-    <li><span class="num">V</span><a href="#s5">Journey to the Fort</a></li>
-    <li><span class="num">VI</span><a href="#s6">Infiltration</a></li>
-    <li><span class="num">VII</span><a href="#s7">Pantomime Parlay</a></li>
-    <li><span class="num">VIII</span><a href="#s8">The Dungeon</a></li>
-    <li><span class="num">IX</span><a href="#s9">Interrogation</a></li>
-    <li><span class="num">X</span><a href="#s10">Lenore Awakes</a></li>
-    <li><span class="num">XI</span><a href="#s11">The Execution Order</a></li>
-    <li><span class="num">XII</span><a href="#s12">The Forgery</a></li>
-    <li><span class="num">XIII</span><a href="#s13">Nicollo's Gambit</a></li>
-    <li><span class="num">XIV</span><a href="#s14">The Fort Erupts</a></li>
-    <li><span class="num">XV</span><a href="#s15">Lenore's Escape</a></li>
-    <li><span class="num">XVI</span><a href="#s16">Varkus, Klaxon &amp; Griddy</a></li>
-    <li><span class="num">XVII</span><a href="#s17">Nicollo's Betrayal</a></li>
-    <li><span class="num">XVIII</span><a href="#s18">The Condemned</a></li>
-    <li><span class="num">XIX</span><a href="#s19">At Dawn</a></li>
-    <li><span class="num">XX</span><a href="#s20">The Sheltering Dome</a></li>
-  </ol>
+  <details class="toc-toggle">
+    <summary>Scenes</summary>
+    <ol>
+      <li><span class="num">I</span><a href="#s1">Nicollo's Awakening</a></li>
+      <li><span class="num">II</span><a href="#s2">Battle Beast Captured</a></li>
+      <li><span class="num">III</span><a href="#s3">Maverick's Arrest</a></li>
+      <li><span class="num">IV</span><a href="#s4">Heyu in the Barn</a></li>
+      <li><span class="num">V</span><a href="#s5">Journey to the Fort</a></li>
+      <li><span class="num">VI</span><a href="#s6">Infiltration</a></li>
+      <li><span class="num">VII</span><a href="#s7">Pantomime Parlay</a></li>
+      <li><span class="num">VIII</span><a href="#s8">The Dungeon</a></li>
+      <li><span class="num">IX</span><a href="#s9">Interrogation</a></li>
+      <li><span class="num">X</span><a href="#s10">Lenore Awakes</a></li>
+      <li><span class="num">XI</span><a href="#s11">The Execution Order</a></li>
+      <li><span class="num">XII</span><a href="#s12">The Forgery</a></li>
+      <li><span class="num">XIII</span><a href="#s13">Nicollo's Gambit</a></li>
+      <li><span class="num">XIV</span><a href="#s14">The Fort Erupts</a></li>
+      <li><span class="num">XV</span><a href="#s15">Lenore's Escape</a></li>
+      <li><span class="num">XVI</span><a href="#s16">Varkus, Klaxon &amp; Griddy</a></li>
+      <li><span class="num">XVII</span><a href="#s17">Nicollo's Betrayal</a></li>
+      <li><span class="num">XVIII</span><a href="#s18">The Condemned</a></li>
+      <li><span class="num">XIX</span><a href="#s19">At Dawn</a></li>
+      <li><span class="num">XX</span><a href="#s20">The Sheltering Dome</a></li>
+    </ol>
+  </details>
 </nav>
 
 <div class="divider">&mdash; &bull; &mdash;</div>
@@ -202,9 +249,12 @@
     <span class="scene-number">Scene I</span>
     <h2 class="scene-title">Nicollo's Awakening</h2>
   </div>
-  <div class="scene-text">
-    <p>Nicollo Mach V shakes off the hypnotizing effect of Rex Bedsheet's Throne fate card and looks down at a bloody dagger in his hand, and the soaking wet body of Lenore dying in the mud before him. He has just stabbed her deeply in the torso. Purple Dragon Knights descend on him but he disengages and flees into the rainy night, slipping between stone buildings. The guards rush to Lenore&mdash;one bears a holy symbol and lays on hands, saving her life.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>Nicollo Mach V shakes off the hypnotizing effect of Rex Bedsheet's Throne fate card and looks down at a bloody dagger in his hand, and the soaking wet body of Lenore dying in the mud before him. He has just stabbed her deeply in the torso. Purple Dragon Knights descend on him but he disengages and flees into the rainy night, slipping between stone buildings. The guards rush to Lenore&mdash;one bears a holy symbol and lays on hands, saving her life.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/1a.png" alt="Nicollo's awakening" loading="lazy">
     <img src="images/03-22/1b.png" alt="Nicollo's awakening" loading="lazy">
@@ -220,9 +270,12 @@
     <span class="scene-number">Scene II</span>
     <h2 class="scene-title">Battle Beast Captured</h2>
   </div>
-  <div class="scene-text">
-    <p>Battle Beast lies facedown in a carriage track on a muddy road in the rain, his white fur completely brown and bloody. Knights violently bind his arms and legs, then wrestle him into a huge cage on a flatbed carriage&mdash;one designed for horses or large beasts.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>Battle Beast lies facedown in a carriage track on a muddy road in the rain, his white fur completely brown and bloody. Knights violently bind his arms and legs, then wrestle him into a huge cage on a flatbed carriage&mdash;one designed for horses or large beasts.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/2a.png" alt="Battle Beast captured" loading="lazy">
     <img src="images/03-22/2b.png" alt="Battle Beast captured" loading="lazy">
@@ -235,9 +288,12 @@
     <span class="scene-number">Scene III</span>
     <h2 class="scene-title">Maverick's Arrest</h2>
   </div>
-  <div class="scene-text">
-    <p>Maverick Asswell kneels with his hands raised as crossbows and halberds point at him. The knights lift him to his feet, bind his hands in light shackles, and escort him toward Fort Maximillien. His ornate rings glint beneath the iron manacles&mdash;a gentleman in chains.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>Maverick Asswell kneels with his hands raised as crossbows and halberds point at him. The knights lift him to his feet, bind his hands in light shackles, and escort him toward Fort Maximillien. His ornate rings glint beneath the iron manacles&mdash;a gentleman in chains.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/3a.png" alt="Maverick's arrest" loading="lazy">
     <img src="images/03-22/3b.png" alt="Maverick's arrest" loading="lazy">
@@ -252,9 +308,12 @@
     <span class="scene-number">Scene IV</span>
     <h2 class="scene-title">Heyu in the Barn</h2>
   </div>
-  <div class="scene-text">
-    <p>Heyu watches from the shadows as the traumatized crowd mourns their dead in the Grub &amp; Grog's barn. Shadowhigh's revolvers lie abandoned in the mud&mdash;she has been stunned by a war wizard and dragged in chains to a waiting carriage. Nicollo, disguised in a rubber human mask stretched over his mechanical face, coaxes Heyu away from the crowd. Together they hatch a plan to rescue their party from the fort.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>Heyu watches from the shadows as the traumatized crowd mourns their dead in the Grub &amp; Grog's barn. Shadowhigh's revolvers lie abandoned in the mud&mdash;she has been stunned by a war wizard and dragged in chains to a waiting carriage. Nicollo, disguised in a rubber human mask stretched over his mechanical face, coaxes Heyu away from the crowd. Together they hatch a plan to rescue their party from the fort.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/4a.png" alt="Heyu in the barn" loading="lazy">
     <img src="images/03-22/4b.png" alt="Heyu in the barn" loading="lazy">
@@ -270,9 +329,12 @@
     <span class="scene-number">Scene V</span>
     <h2 class="scene-title">Journey to the Fort</h2>
   </div>
-  <div class="scene-text">
-    <p>The cage carriage rattles through the rain toward the small deep lake, Fort Maximillien rising from a fortified island within. Through the gatehouse, past the stables lit with magical yellow torchlight&mdash;the war wizards allow no open flame. Battle Beast is wrestled into a permanent cage on the back wall, where a wounded owlbear sleeps chained to an anchor. They string his chain to the opposite corner and laugh at his fear of the beast.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>The cage carriage rattles through the rain toward the small deep lake, Fort Maximillien rising from a fortified island within. Through the gatehouse, past the stables lit with magical yellow torchlight&mdash;the war wizards allow no open flame. Battle Beast is wrestled into a permanent cage on the back wall, where a wounded owlbear sleeps chained to an anchor. They string his chain to the opposite corner and laugh at his fear of the beast.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/5a.png" alt="Journey to the fort" loading="lazy">
     <img src="images/03-22/5b.png" alt="Journey to the fort" loading="lazy">
@@ -289,9 +351,12 @@
     <span class="scene-number">Scene VI</span>
     <h2 class="scene-title">Infiltration</h2>
   </div>
-  <div class="scene-text">
-    <p>Nicollo studies the Ruin card&mdash;the reason he came to Waterdeep, now locked inside the fort with Lenore. He and Heyu scout the fortress from the rain-lashed shoreline, its torchlit battlements reflected in dark water. Heyu turns invisible, and Nicollo stealthily approaches the gatehouse, slipping past the heavy guard.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>Nicollo studies the Ruin card&mdash;the reason he came to Waterdeep, now locked inside the fort with Lenore. He and Heyu scout the fortress from the rain-lashed shoreline, its torchlit battlements reflected in dark water. Heyu turns invisible, and Nicollo stealthily approaches the gatehouse, slipping past the heavy guard.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/6a.png" alt="Infiltration" loading="lazy">
     <img src="images/03-22/6b.png" alt="Infiltration" loading="lazy">
@@ -306,9 +371,12 @@
     <span class="scene-number">Scene VII</span>
     <h2 class="scene-title">Pantomime Parlay</h2>
   </div>
-  <div class="scene-text">
-    <p>In the cage, Battle Beast has started a pantomime parlay with the groggy owlbear. It does not seem immediately hostile, but it bears no love for its captors. The guards taunt them both, casually mentioning that Battle Beast and the owlbear are to be culled at dawn along with the other executions. Battle Beast tries to tear off his bindings with tremendous might&mdash;and fails. The guards laugh.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>In the cage, Battle Beast has started a pantomime parlay with the groggy owlbear. It does not seem immediately hostile, but it bears no love for its captors. The guards taunt them both, casually mentioning that Battle Beast and the owlbear are to be culled at dawn along with the other executions. Battle Beast tries to tear off his bindings with tremendous might&mdash;and fails. The guards laugh.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/7a.png" alt="Pantomime parlay" loading="lazy">
     <img src="images/03-22/7b.png" alt="Pantomime parlay" loading="lazy">
@@ -328,9 +396,12 @@
     <span class="scene-number">Scene VIII</span>
     <h2 class="scene-title">The Dungeon</h2>
   </div>
-  <div class="scene-text">
-    <p>Shadowhigh is chained to a wall in a dark, barren cell. She snaps her fingers and summons a small dragon, which finds a pile of partly incinerated bones and a singed spellbook with its pages fallen out. The dragon brings a page back&mdash;useless. In a nearby cell, Barold Bonds is chained and condemned for a totally unrelated crime, the beginning of a lewd and blasphemous tattoo on his back.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>Shadowhigh is chained to a wall in a dark, barren cell. She snaps her fingers and summons a small dragon, which finds a pile of partly incinerated bones and a singed spellbook with its pages fallen out. The dragon brings a page back&mdash;useless. In a nearby cell, Barold Bonds is chained and condemned for a totally unrelated crime, the beginning of a lewd and blasphemous tattoo on his back.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/8a.png" alt="The dungeon" loading="lazy">
     <img src="images/03-22/8b.png" alt="The dungeon" loading="lazy">
@@ -347,9 +418,12 @@
     <span class="scene-number">Scene IX</span>
     <h2 class="scene-title">Interrogation</h2>
   </div>
-  <div class="scene-text">
-    <p>Maverick is questioned in the upper bastion by Sir Merriam. He sits in a plush armchair across from a well-appointed desk, two War Wizards standing behind Merriam reading his mind. On the desk: his rapier, his quill, and a loosely wrapped deck of cards with the Ruin card peeking out. Maverick convinces Merriam of his innocence and even persuades him to investigate Rex Bedsheets and his pyramid scheme.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>Maverick is questioned in the upper bastion by Sir Merriam. He sits in a plush armchair across from a well-appointed desk, two War Wizards standing behind Merriam reading his mind. On the desk: his rapier, his quill, and a loosely wrapped deck of cards with the Ruin card peeking out. Maverick convinces Merriam of his innocence and even persuades him to investigate Rex Bedsheets and his pyramid scheme.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/9b.png" alt="Interrogation" loading="lazy">
     <img src="images/03-22/9c.png" alt="Interrogation" loading="lazy">
@@ -363,9 +437,12 @@
     <span class="scene-number">Scene X</span>
     <h2 class="scene-title">Lenore Awakes</h2>
   </div>
-  <div class="scene-text">
-    <p>Lenore awakes under a white sheet, her wounds staunched. She is in a medical facility beside a biomechanical sarcophagus with arcane markings, now inert. The doors are barred and locked. A medic tells her to lie still&mdash;she is handcuffed to the gurney. When he leaves, she sets about picking the lock.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>Lenore awakes under a white sheet, her wounds staunched. She is in a medical facility beside a biomechanical sarcophagus with arcane markings, now inert. The doors are barred and locked. A medic tells her to lie still&mdash;she is handcuffed to the gurney. When he leaves, she sets about picking the lock.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/10a.png" alt="Lenore awakes" loading="lazy">
     <img src="images/03-22/10b.png" alt="Lenore awakes" loading="lazy">
@@ -380,9 +457,12 @@
     <span class="scene-number">Scene XI</span>
     <h2 class="scene-title">The Execution Order</h2>
   </div>
-  <div class="scene-text">
-    <p>Nicollo sneaks along the rain-swept battlements and finds a posted execution order signed by General Varkus&mdash;Battle Beast and the owlbear are to be culled at dawn. In the cage below, Battle Beast cradles the wounded owlbear. One guard watches with conflicted eyes while the others drink and laugh. Then Battle Beast erupts&mdash;he snaps his bindings, and together with the owlbear they smash the cage door from its hinges and tear through the stable wall into the night.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>Nicollo sneaks along the rain-swept battlements and finds a posted execution order signed by General Varkus&mdash;Battle Beast and the owlbear are to be culled at dawn. In the cage below, Battle Beast cradles the wounded owlbear. One guard watches with conflicted eyes while the others drink and laugh. Then Battle Beast erupts&mdash;he snaps his bindings, and together with the owlbear they smash the cage door from its hinges and tear through the stable wall into the night.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/11a.png" alt="The execution order" loading="lazy">
     <img src="images/03-22/11b.png" alt="The execution order" loading="lazy">
@@ -402,9 +482,12 @@
     <span class="scene-number">Scene XII</span>
     <h2 class="scene-title">The Forgery</h2>
   </div>
-  <div class="scene-text">
-    <p>As the breakout rages and Battle Beast fights through the wreckage of the stables, Nicollo pulls out parchment and quill. Holding the execution order, he begins to forge the signature of General Peterbilt Varkus, High Commander of the Western Vanguard&mdash;his mechanical hands precise and steady, copying every flourish.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>As the breakout rages and Battle Beast fights through the wreckage of the stables, Nicollo pulls out parchment and quill. Holding the execution order, he begins to forge the signature of General Peterbilt Varkus, High Commander of the Western Vanguard&mdash;his mechanical hands precise and steady, copying every flourish.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/12a.png" alt="The forgery" loading="lazy">
     <img src="images/03-22/12b.png" alt="The forgery" loading="lazy">
@@ -420,9 +503,12 @@
     <span class="scene-number">Scene XIII</span>
     <h2 class="scene-title">Nicollo's Gambit</h2>
   </div>
-  <div class="scene-text">
-    <p>Nicollo sprints through the kitchen past the terrified cook and down the hall to the command center. He shoves the forged orders into Colonel Angus's face, demanding to see Varkus. Angus pushes him aside. Sir Loin rushes toward the kitchen where a bloodsoaked Battle Beast is savaging the guards&mdash;they clash in the doorway, and Sir Loin falls.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>Nicollo sprints through the kitchen past the terrified cook and down the hall to the command center. He shoves the forged orders into Colonel Angus's face, demanding to see Varkus. Angus pushes him aside. Sir Loin rushes toward the kitchen where a bloodsoaked Battle Beast is savaging the guards&mdash;they clash in the doorway, and Sir Loin falls.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/13a.png" alt="Nicollo's gambit" loading="lazy">
     <img src="images/03-22/13b.png" alt="Nicollo's gambit" loading="lazy">
@@ -436,9 +522,12 @@
     <span class="scene-number">Scene XIV</span>
     <h2 class="scene-title">The Fort Erupts</h2>
   </div>
-  <div class="scene-text">
-    <p>Upstairs, Varkus orders Merriam and the War Wizards to investigate the racket. Maverick sits shackled, knowing his friends are about to ruin everything. In the corridors below, Sir Loin clashes with Battle Beast in a brutal doorway fight. Heyu rushes up a tower stair and blasts an unsuspecting guard with a frosty ray&mdash;he shatters into ice.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>Upstairs, Varkus orders Merriam and the War Wizards to investigate the racket. Maverick sits shackled, knowing his friends are about to ruin everything. In the corridors below, Sir Loin clashes with Battle Beast in a brutal doorway fight. Heyu rushes up a tower stair and blasts an unsuspecting guard with a frosty ray&mdash;he shatters into ice.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/14a.png" alt="The fort erupts" loading="lazy">
     <img src="images/03-22/14b.png" alt="The fort erupts" loading="lazy">
@@ -452,9 +541,12 @@
     <span class="scene-number">Scene XV</span>
     <h2 class="scene-title">Lenore's Escape</h2>
   </div>
-  <div class="scene-text">
-    <p>Lenore, in only a hospital gown, hides beside the door with a jar of acid. When the medic returns she splashes it into his face and grabs him with a shocking grasp, frying him. She discovers a huge pit in the ground with no bottom in sight. In the halls beyond, Battle Beast and the owlbear fight Colonel Angus and a crowd of guards&mdash;together they bring Angus down, but both are grievously wounded. Lenore reaches out with magic and teleports Battle Beast away from the fight. They flee toward the pit.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>Lenore, in only a hospital gown, hides beside the door with a jar of acid. When the medic returns she splashes it into his face and grabs him with a shocking grasp, frying him. She discovers a huge pit in the ground with no bottom in sight. In the halls beyond, Battle Beast and the owlbear fight Colonel Angus and a crowd of guards&mdash;together they bring Angus down, but both are grievously wounded. Lenore reaches out with magic and teleports Battle Beast away from the fight. They flee toward the pit.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/15a.png" alt="Lenore's escape" loading="lazy">
     <img src="images/03-22/15b.png" alt="Lenore's escape" loading="lazy">
@@ -473,9 +565,12 @@
     <span class="scene-number">Scene XVI</span>
     <h2 class="scene-title">Varkus, Klaxon &amp; Griddy</h2>
   </div>
-  <div class="scene-text">
-    <p>General Varkus enters the office, followed by Phillip Klaxon&mdash;a middle-aged minor noble, furious&mdash;and Griddy Champagne in smoldering black leather armor, staring holes into Maverick. Varkus demands the true reason for their attack. Maverick tries to explain himself, but Klaxon fumes: <em>"Don't listen to him! He is conspiring against us!"</em></p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>General Varkus enters the office, followed by Phillip Klaxon&mdash;a middle-aged minor noble, furious&mdash;and Griddy Champagne in smoldering black leather armor, staring holes into Maverick. Varkus demands the true reason for their attack. Maverick tries to explain himself, but Klaxon fumes: <em>"Don't listen to him! He is conspiring against us!"</em></p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/16a.png" alt="Varkus, Klaxon and Griddy" loading="lazy">
     <img src="images/03-22/16b.png" alt="Varkus, Klaxon and Griddy" loading="lazy">
@@ -488,10 +583,13 @@
     <span class="scene-number">Scene XVII</span>
     <h2 class="scene-title">Nicollo's Betrayal</h2>
   </div>
-  <div class="scene-text">
-    <p>Heyu, Battle Beast, and Lenore jump through the portal into the pit. But Nicollo stands on the edge and ponders&mdash;then turns back and surrenders to the guards. Brought before Varkus, he betrays the party: he was always in the service of Klaxon, and the moment he found out Lenore had the Ruin card, he killed her and tried to take it. Griddy slips the Ruin card away. Varkus sets down Maverick's sentence: hanging, at dawn.</p>
-    <p>In the dungeon, Maverick sits alone in his cell, broken. Nearby, Barold's accidental magic has filled his cell with moss, flowers, and beautiful mushrooms&mdash;an impossible garden blooming from the stone.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>Heyu, Battle Beast, and Lenore jump through the portal into the pit. But Nicollo stands on the edge and ponders&mdash;then turns back and surrenders to the guards. Brought before Varkus, he betrays the party: he was always in the service of Klaxon, and the moment he found out Lenore had the Ruin card, he killed her and tried to take it. Griddy slips the Ruin card away. Varkus sets down Maverick's sentence: hanging, at dawn.</p>
+      <p>In the dungeon, Maverick sits alone in his cell, broken. Nearby, Barold's accidental magic has filled his cell with moss, flowers, and beautiful mushrooms&mdash;an impossible garden blooming from the stone.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/17a.png" alt="Nicollo's betrayal" loading="lazy">
     <img src="images/03-22/17b.png" alt="Nicollo's betrayal" loading="lazy">
@@ -508,9 +606,12 @@
     <span class="scene-number">Scene XVIII</span>
     <h2 class="scene-title">The Condemned</h2>
   </div>
-  <div class="scene-text">
-    <p>Maverick is thrown into a cell. Through the bars, he and Shadowhigh trade stories and regrets. Barold sits miserable amid his accidental paradise of bioluminescent fungi and blooming flowers. Three condemned prisoners, sharing their last night.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>Maverick is thrown into a cell. Through the bars, he and Shadowhigh trade stories and regrets. Barold sits miserable amid his accidental paradise of bioluminescent fungi and blooming flowers. Three condemned prisoners, sharing their last night.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/18a.png" alt="The condemned" loading="lazy">
   </div>
@@ -522,10 +623,13 @@
     <span class="scene-number">Scene XIX</span>
     <h2 class="scene-title">At Dawn</h2>
   </div>
-  <div class="scene-text">
-    <p>In the hole far below, the living party crouches in the pitch black&mdash;Heyu, Battle Beast, and Lenore&mdash;lost in some subterranean maze with no idea what waits in the darkness.</p>
-    <p>At dawn, Barold, Maverick, and Shadowhigh are led blindfolded and bound to the gallows, surrounded by the Purple Dragon garrison. Shadowhigh's dragon flies in desperately, trying to burn the ropes&mdash;a crossbow bolt cuts it down. Maverick misty steps away from the noose; Barold breaks free. For one moment there is hope. Then all three are torn to shreds by blasts of magic from wanded wizards on the battlements. They are dead.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>In the hole far below, the living party crouches in the pitch black&mdash;Heyu, Battle Beast, and Lenore&mdash;lost in some subterranean maze with no idea what waits in the darkness.</p>
+      <p>At dawn, Barold, Maverick, and Shadowhigh are led blindfolded and bound to the gallows, surrounded by the Purple Dragon garrison. Shadowhigh's dragon flies in desperately, trying to burn the ropes&mdash;a crossbow bolt cuts it down. Maverick misty steps away from the noose; Barold breaks free. For one moment there is hope. Then all three are torn to shreds by blasts of magic from wanded wizards on the battlements. They are dead.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/19a.png" alt="At dawn" loading="lazy">
     <img src="images/03-22/19c.png" alt="At dawn" loading="lazy">
@@ -544,9 +648,12 @@
     <span class="scene-number">Scene XX</span>
     <h2 class="scene-title">The Sheltering Dome</h2>
   </div>
-  <div class="scene-text">
-    <p>In the hole, the living party crouches under a magical sheltering dome that Heyu emits from her wand. Three bodies fall onto the translucent barrier&mdash;Shadowhigh, Maverick, and Barold. The party is together again. But only half of them are alive.</p>
-  </div>
+  <details class="scene-text-toggle">
+    <summary>Read</summary>
+    <div class="scene-text-inner">
+      <p>In the hole, the living party crouches under a magical sheltering dome that Heyu emits from her wand. Three bodies fall onto the translucent barrier&mdash;Shadowhigh, Maverick, and Barold. The party is together again. But only half of them are alive.</p>
+    </div>
+  </details>
   <div class="gallery">
     <img src="images/03-22/20a.png" alt="The sheltering dome" loading="lazy">
   </div>
